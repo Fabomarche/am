@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
     <link rel="stylesheet" href="./css/style.css">
-    <title>AM</title>
+    <title>AM Clases Universitarias</title>
+    <link rel="icon" type="image/png" href="./assets/img/Logo PNG.png"/>
 </head>
 <body>
     <header>
@@ -33,7 +33,7 @@
                             <a class="materias-link transition nav-link px-5" href="#">Materias</a>
                             <a class="cursos-link transition nav-link px-5" href="#">Cursos</a>
                             <a class="recursos-link transition nav-link px-5" href="#">Recursos</a>
-                            <a class="contacto-link transition nav-link px-5" href="#">Contacto</a>
+                            <a class="contacto-link transition nav-link px-5" href="./html/contacto.html">Contacto</a>
                         </div>
                     </div>
                 </div>
@@ -207,48 +207,32 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                <!-- <div class="d-flex">
-                    <div id="quote" class="w-50 d-flex flex-column align-items-center">
-                        <div>
-                            <div class="rectangule">
-                                <div class="quoteText container">
-                                    <h5 class="py-2">Incredible Experience</h5>
-                                    <p>We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the concept so quickly. It acted as a catalyst to take our design to the next level and get more eyes on our product.</p>
-                                </div>
-                            </div>
-                            <div class="triangule"></div>
-                        </div>
-                        <div class="d-flex">
-                            <img class="me-3"src="./assets/img/instagram.svg" alt="">
-                            <div class="student">
-                                <h5 class="mb-0">Jane Cooper</h5>
-                                <span>CEO, ABC Corporation</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="quote" class="w-50 d-flex flex-column align-items-center">
-                        <div>
-                            <div class="rectangule">
-                                <div class="quoteText container">
-                                    <h5 class="py-2">Incredible Experience</h5>
-                                    <p>We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the concept so quickly. It acted as a catalyst to take our design to the next level and get more eyes on our product.</p>
-                                </div>
-                            </div>
-                            <div class="triangule"></div>
-                        </div>
-                        <div class="d-flex">
-                            <img class="me-3"src="./assets/img/instagram.svg" alt="">
-                            <div class="student">
-                                <h5 class="mb-0">Jane Cooper</h5>
-                                <span>CEO, ABC Corporation</span>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
-            </div>
         </section>
     </main>
+
+    <div class="modal" tabindex="-1" id="Modal" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div id="papel-amarillo"></div>
+            <div class="modal-content px-5">
+            <div class="modal-body ms-4">
+                    <h5>Clases de Apoyo</h5>
+                    <p>No entendes alguna materia?
+                        Nosotros somos estudiantes que tambien nos paso lo mismo, por eso este es tu lugar donde vas a poder sacarte todas las dudas.
+                    </p>
+                    <h5>Elegí la carrera</h5>
+                </div>
+                <div id="botones-papel" class="d-flex justify-content-center">
+                    <a href="#" class="text-decoration-none text-dark">
+                        <div id="btn-papel-iz" class="me-4"><span>Arquitectura</span></div>
+                    </a>
+                    <a href="#" class="text-decoration-none text-dark">
+                        <div id="btn-papel-de" class="ms-4"><span>Medicina</span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <footer class="pt-4 pb-1">
         <nav class="navbar navbar-expand-lg navbar-dark d-flex flex-column align-items-center text-white">

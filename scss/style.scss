@@ -12,7 +12,6 @@ $celesteClaro: #cfeef8;
 $naranja: #ffbb6c;
 $naranjaClaro: #ffe3c1;
 $negro: #18191f;
-
 /*---------------HEADER------------------*/
 header {
   margin-top: -1.25rem;
@@ -49,6 +48,68 @@ header {
   width: 100%;
   height: auto;
 }
+
+/*----------MODAL----------------*/
+.modal {
+  display: block;
+  background-color: rgba($color: $negro, $alpha: 0.7);
+}
+
+#papel-amarillo {
+  position: relative;
+  background-color: $amarillo;
+  width: 10rem;
+  height: 2.8rem;
+  transform: rotate(33deg);
+  top: 3em;
+  left: 24em;
+  z-index: 2;
+  opacity: 0.75;
+}
+
+#botones-papel {
+  position: relative;
+  top: 1em;
+}
+#btn-papel-iz {
+  background-color: $celeste;
+  width: 10rem;
+  height: 6rem;
+  transform: rotate(-5deg);
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  span {
+    font-weight: bold;
+    position: relative;
+    top: 2em;
+    left: 2em;
+  }
+}
+
+#btn-papel-de {
+  background-color: $celeste;
+  width: 10rem;
+  height: 6rem;
+  transform: rotate(5deg);
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  span {
+    font-weight: bold;
+    position: relative;
+    top: 2em;
+    left: 2.6em;
+  }
+}
+
+#btn-papel-iz:hover,
+#btn-papel-de:hover {
+  transform: scale(1.1);
+}
+
+.modal-content {
+  background-image: url("../assets/img/hoja_papel_612x612.png");
+}
+/*----------END MODAL----------------*/
 
 /*-----------STICKYS--------------*/
 #stickys {
@@ -190,6 +251,47 @@ header {
   transform: translate(-75%, 0%);
 }
 /*-------------END TESTIMONIOS----------------*/
+
+/*-------------CONTACTO------------------------*/
+#contactoRosa {
+  background-color: $rosa;
+  margin: 1rem;
+  width: 15rem;
+  height: 17rem;
+  box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+#contactoAmarillo {
+  background-color: $amarillo;
+  margin: 1rem;
+  width: 15rem;
+  height: 17rem;
+  box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+#contactoCeleste {
+  background-color: $celeste;
+  margin: 1rem;
+  width: 15rem;
+  height: 17rem;
+  box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+#contactoVerde {
+  background-color: $verde;
+  margin: 1rem;
+  width: 15rem;
+  height: 17rem;
+  box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+/*---------------FORM-------------*/
+.btn-rosa {
+  background-color: $rosa;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+}
+/*---------------END FORM-------------*/
+
+/*-------------END CONTACTO------------------------*/
 /*--------------------------------END MAIN---------------------------------*/
 
 footer {
