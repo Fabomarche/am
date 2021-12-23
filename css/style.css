@@ -26,7 +26,15 @@
 
 /*-----------STICKYS--------------*/
 #stickys {
-  margin-top: -100px; }
+  margin-top: -100px;
+  margin-left: 150px !important; }
+
+#hashtag {
+  position: relative;
+  top: 185px;
+  right: 125px;
+  font-weight: bold;
+  font-size: 0.9rem; }
 
 #stickyYellow {
   position: relative;
@@ -37,11 +45,15 @@
   background-color: #fbf47d;
   transform: rotate(10deg);
   z-index: 2;
-  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.2); }
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.2);
+  transition: 0.5s; }
   #stickyYellow img {
     width: 100%;
     height: auto;
     position: relative; }
+
+#stickyYellow:hover {
+  top: 7em; }
 
 #stickyOrange {
   position: relative;
@@ -52,31 +64,43 @@
   background-color: #ffbb6c;
   transform: rotate(-25deg);
   z-index: 0;
-  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2); }
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s; }
   #stickyOrange span {
     position: relative;
     top: 7.5em;
     left: 1em;
     font-size: 1.2rem; }
 
+#stickyOrange:hover {
+  top: 3.5em;
+  transform: rotate(-15deg); }
+
 #stickyPink {
   position: absolute;
   width: 11rem;
   height: 11rem;
-  background-color: #ff91ff;
+  background-color: #ffcfe6;
   transform: rotate(-5deg);
   z-index: 1;
-  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2); }
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+  transition: 0.5s; }
   #stickyPink span {
     position: relative;
     top: 7.5em;
     left: 1em;
     font-size: 1.2rem; }
 
+#stickyPink:hover {
+  transform: scale(1.1); }
+
 /*-----------END STICKYS--------------*/
 /*-------------TESTIMONIOS----------------*/
 .testimonios {
-  background-color: #ff91ff; }
+  background-color: #ffcfe6; }
+  .testimonios .comillas {
+    width: 14%;
+    height: auto; }
 
 .quoteText {
   font-size: 0.8rem;
@@ -106,13 +130,21 @@
   border-top: 20px solid white;
   z-index: 0; }
 
-.carousel .carousel-control-prev {
-  margin-right: 150px; }
+.carousel-control-next-icon {
+  background-image: url("../assets/img/flechaDerecha.svg"); }
 
-.carousel .carousel-control-next {
-  margin-left: 200px; }
+.carousel-control-prev-icon {
+  background-image: url("../assets/img/flechaIzquierda.svg"); }
+
+.carousel-control-next {
+  transform: translate(75%, 0%); }
+
+.carousel-control-prev {
+  transform: translate(-75%, 0%); }
 
 /*-------------END TESTIMONIOS----------------*/
 /*--------------------------------END MAIN---------------------------------*/
 footer {
   background-color: #18191f; }
+  footer .powered {
+    font-size: 0.8rem; }
