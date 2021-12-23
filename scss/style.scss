@@ -1,1 +1,146 @@
+//fonts
 
+//colors
+$amarillo: #fbf47d;
+$amarilloClaro: #fffbb0;
+$rosa: #ff91ff;
+$rosaClaro: #ffcfe6;
+$verde: #a8f69c;
+$verdeClaro: #d6f8cf;
+$celeste: #86d7f5;
+$celesteClaro: #cfeef8;
+$naranja: #ffbb6c;
+$naranjaClaro: #ffe3c1;
+$negro: #18191f;
+
+/*---------------HEADER------------------*/
+.navbar-text {
+  color: $celeste !important;
+}
+
+.transition {
+  transition: 0.5s;
+}
+.materias-link:hover {
+  color: $rosa !important;
+}
+.cursos-link:hover {
+  color: $naranja !important;
+}
+.recursos-link:hover {
+  color: $celeste !important;
+}
+
+.contacto-link:hover {
+  color: $verde !important;
+}
+/*---------------END HEADER------------------*/
+/*--------------------------------MAIN---------------------------------*/
+
+/*-----------STICKYS--------------*/
+#stickys {
+  margin-top: -100px;
+}
+
+#stickyYellow {
+  position: relative;
+  left: 2em;
+  top: 8em;
+  width: 14rem;
+  height: 14rem;
+  background-color: $amarillo;
+  transform: rotate(10deg);
+  z-index: 2;
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.2);
+  img {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
+#stickyOrange {
+  position: relative;
+  left: 5em;
+  top: 2em;
+  width: 11rem;
+  height: 11rem;
+  background-color: $naranja;
+  transform: rotate(-25deg);
+  z-index: 0;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
+  span {
+    position: relative;
+    top: 7.5em;
+    left: 1em;
+    font-size: 1.2rem;
+  }
+}
+
+#stickyPink {
+  position: absolute;
+  width: 11rem;
+  height: 11rem;
+  background-color: $rosa;
+  transform: rotate(-5deg);
+  z-index: 1;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+  span {
+    position: relative;
+    top: 7.5em;
+    left: 1em;
+    font-size: 1.2rem;
+  }
+}
+/*-----------END STICKYS--------------*/
+
+/*-------------TESTIMONIOS----------------*/
+.testimonios {
+  background-color: $rosa;
+}
+
+.quoteText {
+  font-size: 0.8rem;
+  text-align: center;
+  z-index: 5;
+}
+
+.student {
+  color: white;
+  text-align: center;
+}
+
+.rectangule {
+  background-color: white;
+  width: 30rem;
+  height: 10rem;
+  border-radius: 12px;
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.triangule {
+  position: relative;
+  left: 14em;
+  top: -0.5em;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid white;
+  z-index: 0;
+}
+
+.carousel {
+  .carousel-control-prev {
+    margin-right: 150px;
+  }
+  .carousel-control-next {
+    margin-left: 200px;
+  }
+}
+
+/*-------------END TESTIMONIOS----------------*/
+/*--------------------------------END MAIN---------------------------------*/
+
+footer {
+  background-color: $negro;
+}
