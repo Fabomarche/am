@@ -14,6 +14,13 @@ $naranjaClaro: #ffe3c1;
 $negro: #18191f;
 
 /*---------------HEADER------------------*/
+header {
+  margin-top: -1.25rem;
+}
+.textoLogo {
+  font-size: 0.8rem;
+  transform: translate(0%, -150%);
+}
 .navbar-text {
   color: $celeste !important;
 }
@@ -71,6 +78,13 @@ $negro: #18191f;
     width: 100%;
     height: auto;
     position: relative;
+  }
+  span {
+    font-size: 0.8rem;
+    font-weight: 500;
+    position: relative;
+    bottom: 4em;
+    left: 4.1em;
   }
   transition: 0.5s;
 }
@@ -163,9 +177,11 @@ $negro: #18191f;
 }
 .carousel-control-next-icon {
   background-image: url("../assets/img/flechaDerecha.svg");
+  transform: scale(1.5);
 }
 .carousel-control-prev-icon {
   background-image: url("../assets/img/flechaIzquierda.svg");
+  transform: scale(1.5);
 }
 .carousel-control-next {
   transform: translate(75%, 0%);

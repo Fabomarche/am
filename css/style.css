@@ -1,4 +1,11 @@
 /*---------------HEADER------------------*/
+header {
+  margin-top: -1.25rem; }
+
+.textoLogo {
+  font-size: 0.8rem;
+  transform: translate(0%, -150%); }
+
 .navbar-text {
   color: #86d7f5 !important; }
 
@@ -51,6 +58,12 @@
     width: 100%;
     height: auto;
     position: relative; }
+  #stickyYellow span {
+    font-size: 0.8rem;
+    font-weight: 500;
+    position: relative;
+    bottom: 4em;
+    left: 4.1em; }
 
 #stickyYellow:hover {
   top: 7em; }
@@ -131,10 +144,12 @@
   z-index: 0; }
 
 .carousel-control-next-icon {
-  background-image: url("../assets/img/flechaDerecha.svg"); }
+  background-image: url("../assets/img/flechaDerecha.svg");
+  transform: scale(1.5); }
 
 .carousel-control-prev-icon {
-  background-image: url("../assets/img/flechaIzquierda.svg"); }
+  background-image: url("../assets/img/flechaIzquierda.svg");
+  transform: scale(1.5); }
 
 .carousel-control-next {
   transform: translate(75%, 0%); }
