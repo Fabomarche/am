@@ -1,0 +1,14 @@
+Nuevo Mensaje desde la web de AM de: {{name}}
+
+
+Tenés un mensaje de: {{name}}:
+
+Mensaje: {{message}}
+
+email de contacto: {{email}}
+
+telefono de contacto: {{phone}}
+
+
+
+Enviado mediante el sitio web de AM
