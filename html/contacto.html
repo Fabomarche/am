@@ -13,7 +13,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow py-0">
             <div class="container">
-                <a class="navbar-brand d-flex flex-column align-items-center py-0" href="#">
+                <a class="navbar-brand d-flex flex-column align-items-center py-0" href="../index.html">
                     <img src="../assets/img/Logo PNG.png" alt="" width="150" height="auto">
                     <span class="textoLogo">Clases Universitarias</span>
                 </a>
@@ -46,21 +46,22 @@
             <div class="py-5 ms-5 d-flex justify-content-center">
                 <div class="w-50 p-3 ms-4">
                     <p>Comunicate con nosotros completando el siguiente formulario con tu consulta. A la brevedad nos pondremos en contacto para bindarte asesoramiento personalizado.</p>
-                    <form class="d-flex flex-column">
+                    <form id="form" class="d-flex flex-column">
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Nombre y Apellido" required>
+                            <input type="text" class="form-control" id="name" name="name" aria-describedby="name" placeholder="Nombre y Apellido" required>
                         </div>
                         <div class="mb-3">
-                            <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Correo electrónico" required>
+                            <input type="email" class="form-control" id="email" name="email" aria-describedby="email" placeholder="Correo electrónico" required>
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="phone" aria-describedby="phone" placeholder="Teléfono" >
+                            <input type="text" class="form-control" id="phone" name="phone" aria-describedby="phone" placeholder="Teléfono" >
                         </div>
                         <div class="mb-3">
-                            <textarea  class="form-control" id="message" aria-describedby="message" placeholder="Tu Consulta..." required></textarea>
+                            <textarea  class="form-control" id="message" aria-describedby="message" name="message" placeholder="Tu Consulta..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-rosa align-self-end ">Enviar</button>
+                        <button id="button" type="submit" class="btn btn-rosa align-self-end ">Enviar</button>
                     </form>
+
                 </div>
                 <div class="d-flex px-5 flex-wrap justify-content-center">
                     <div id="contactoRosa"></div>
@@ -93,15 +94,23 @@
                     <a class="nav-link" href="#">Contacto</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Carrera</a>
+                    <a id="btnCambiarCarrera" class="nav-link" href="#" onclick="changeCarrera()">Carrera</a>
                 </li>
                 </ul>
             </div>
             <p class="mt-5 text-muted powered">Powered by <a class="text-decoration-none text-white" href="">Germán Walton</a> & <a class="text-decoration-none text-white" href="https://www.linkedin.com/in/fabricio-marchetti">Fabricio Marchetti</a></p>
         </nav>
     </footer>
+    <!------------------------------------------------------------------------------------------------------------------------------>
+    <!------------------------------------------------------SCRIPTS ----------------------------------------------------------->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    emailjs.init('user_gdwALGIRNilMqkwHhnxPd')
+    </script>
+<script src="../js/consistency_materia.js"></script>
 </body>
 </html>

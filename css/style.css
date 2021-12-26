@@ -50,6 +50,8 @@ header {
 #botones-papel {
   position: relative;
   top: 1em; }
+  #botones-papel a {
+    cursor: pointer; }
 
 #btn-papel-iz {
   background-color: #86d7f5;

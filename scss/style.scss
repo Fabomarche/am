@@ -70,7 +70,11 @@ header {
 #botones-papel {
   position: relative;
   top: 1em;
+  a {
+    cursor: pointer;
+  }
 }
+
 #btn-papel-iz {
   background-color: $celeste;
   width: 10rem;

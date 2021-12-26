@@ -1,26 +1,7 @@
-const modal = document.getElementById('modal')
 const btnCarrera = document.getElementById('carrerraSpan')
 const btnCambiarCarrera = document.getElementById('btnCambiarCarrera')//footer
 
 if(sessionStorage.getItem('carrerra')){
-    modal.style.display = "none"
-    btnCarrera.innerText = sessionStorage.getItem('carrerra')
-    btnCambiarCarrera.innerHTML = sessionStorage.getItem('!carrerra')
-}
-
-const renderArquitectura = () => {
-    modal.style.display = "none"
-    sessionStorage.setItem('carrerra', "Arquitectura")
-    sessionStorage.setItem('!carrerra', "Medicina")
-    btnCarrera.innerText = sessionStorage.getItem('carrerra')
-    btnCambiarCarrera.innerHTML = sessionStorage.getItem('!carrerra')
-
-}
-
-const renderMedicina = () => {
-    modal.style.display = "none"
-    sessionStorage.setItem('carrerra', "Medicina")
-    sessionStorage.setItem('!carrerra', "Arquitectura")
     btnCarrera.innerText = sessionStorage.getItem('carrerra')
     btnCambiarCarrera.innerHTML = sessionStorage.getItem('!carrerra')
 }
@@ -33,5 +14,30 @@ const changeCarrera = () => {
         btnCarrera.innerText = sessionStorage.getItem('carrerra')
         btnCambiarCarrera.innerHTML = sessionStorage.getItem('!carrerra')
 }
+    
 }
 
+
+/*-----------------------------EMAIL.JS---------------------------------*/
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+.addEventListener('submit', function(event) {
+event.preventDefault();
+
+btn.innerText = 'Enviando...';
+
+const serviceID = 'service_wky2uxc';
+const templateID = 'template_xmd0wov';
+
+emailjs.sendForm(serviceID, templateID, this)
+.then(() => {
+    btn.innerText = 'Enviar';
+    alert('Mensaje enviado!');
+}, (err) => {
+    btn.innerText = 'Enviar';
+    alert(JSON.stringify(err));
+    });
+});
+
+/*-----------------------------END EMAIL.JS---------------------------------*/
