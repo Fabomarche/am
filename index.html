@@ -23,9 +23,9 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="container d-flex flex-column w-100 align-items-end">
                         <div class="navbar-nav">
-                            <a class="nav-item nav-link" href="#"><img src="./assets/img/instagram.svg" alt=""></a>
+                            <a class="nav-item nav-link" href="https://www.instagram.com/amclases"><img src="./assets/img/instagram.svg" alt=""></a>
                             <a class="nav-item nav-link" href="#"><img src="./assets/img/facebook.svg" alt=""></a>
-                            <a class="nav-item nav-link" href="#"><img src="./assets/img/mail.svg" alt=""></a>
+                            <a class="nav-item nav-link" href="amclasesrosario@gmail.com"><img src="./assets/img/mail.svg" alt=""></a>
                         </div>
                         <hr class="w-100 my-1">
                         <div class="navbar-nav d-flex align-items-center">
@@ -44,8 +44,12 @@
     <main>
         <section class="container d-flex justify-content-center fondoPapel">
             <div class="container border border-2 border-dark w-50 my-3 mx-4 h-100 pb-5 pt-2 mt-5">
-                <h2 class="fs-4">Clases de Apoyo</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, a. Eos voluptatem molestiae, aperiam quibusdam laboriosam optio dolore sapiente maiores, excepturi sit error? Id repudiandae consequatur dignissimos ab perspiciatis? Amet?</p>
+                <h2 class="fs-4">¿De dónde salimos?</h2>
+                <p>En 2018 creamos un espacio de aprendizaje, buscando un clima amigable, juvenil y alegre con la idea de renovar la forma de enseñar las materias.</p>
+                <h2 class="fs-4">¿Qué podemos hacer juntos?</h2>
+                <p>Hemos creado un ambiente de confianza para que en cada clase puedas consultar cualquier duda que tengas, sin miedo, porque nuestro objetivo no solo es ayudarte a aprobar si no también a aprender.</p>
+                <h2 class="fs-4">¿Cómo la rompemos?</h2>
+                <p>Como estudiantes de los últimos años de las carreras sabemos cuales son los problemas que podes tener a la hora estudiar, por eso, brindamos clases personalizadas y creamos nuestros propios materiales de estudio además de hacer un seguimiento a las tareas que proponemos.</p>
             </div>
             <div id="stickys" class="mb-5 pb-5 ms-5">
                 <span id="hashtag">#aprendiendoconAM</span>
@@ -210,22 +214,21 @@
         </section>
     </main>
 
-    <div class="modal" tabindex="-1" id="Modal" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal" tabindex="-1" id="modal" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div id="papel-amarillo"></div>
             <div class="modal-content px-5">
             <div class="modal-body ms-4">
                     <h5>Clases de Apoyo</h5>
-                    <p>No entendes alguna materia?
-                        Nosotros somos estudiantes que tambien nos paso lo mismo, por eso este es tu lugar donde vas a poder sacarte todas las dudas.
+                    <p>¡Bienvenidos! hemos creado este nuevo espacio para que estemos más cerca.
                     </p>
-                    <h5>Elegí la carrera</h5>
+                    <h5>Elige una carrera para poder comenzar:</h5>
                 </div>
                 <div id="botones-papel" class="d-flex justify-content-center">
-                    <a href="#" class="text-decoration-none text-dark">
+                    <a href="#" onclick="renderArquitectura()" class="text-decoration-none text-dark">
                         <div id="btn-papel-iz" class="me-4"><span>Arquitectura</span></div>
                     </a>
-                    <a href="#" class="text-decoration-none text-dark">
+                    <a href="#" onclick="renderMedicina()" class="text-decoration-none text-dark">
                         <div id="btn-papel-de" class="ms-4"><span>Medicina</span></div>
                     </a>
                 </div>
@@ -252,7 +255,7 @@
                     <a class="nav-link" href="#">Contacto</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Carrera</a>
+                    <a id="btnCambiarCarrera" class="nav-link" href="#">Carrera</a>
                 </li>
                 </ul>
             </div>
@@ -261,6 +264,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
