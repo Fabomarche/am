@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Condensed:wght@400;700&display=swap");
+body {
+  font-family: "Roboto Condensed", sans-serif; }
+
 /*---------------HEADER------------------*/
 header {
   margin-top: -1.25rem; }
@@ -48,6 +52,7 @@ header {
   opacity: 0.75; }
 
 #botones-papel {
+  font-family: "Inter", sans-serif;
   position: relative;
   top: 1em; }
   #botones-papel a {
@@ -81,7 +86,8 @@ header {
 
 #btn-papel-iz:hover,
 #btn-papel-de:hover {
-  transform: scale(1.1); }
+  transform: scale(1.1);
+  font-weight: bold; }
 
 .modal-content {
   background-image: url("../assets/img/hoja_papel_612x612.png"); }
@@ -89,15 +95,8 @@ header {
 /*----------END MODAL----------------*/
 /*-----------STICKYS--------------*/
 #stickys {
-  margin-top: -100px;
+  margin-top: -75px;
   margin-left: 150px !important; }
-
-#hashtag {
-  position: relative;
-  top: 185px;
-  right: 125px;
-  font-weight: bold;
-  font-size: 0.9rem; }
 
 #stickyYellow {
   position: relative;
@@ -167,6 +166,8 @@ header {
 /*-------------TESTIMONIOS----------------*/
 .testimonios {
   background-color: #ffcfe6; }
+  .testimonios h2 {
+    font-family: "Inter", sans-serif; }
   .testimonios .comillas {
     width: 14%;
     height: auto; }
@@ -177,8 +178,11 @@ header {
   z-index: 5; }
 
 .student {
-  color: white;
-  text-align: center; }
+  font-family: "Inter", sans-serif;
+  background-color: #fffbb0;
+  color: #474a57;
+  text-align: center;
+  font-size: 0.8rem; }
 
 .rectangule {
   background-color: white;
@@ -253,6 +257,7 @@ header {
 /*-------------END CONTACTO------------------------*/
 /*--------------------------------END MAIN---------------------------------*/
 footer {
+  font-family: "Inter", sans-serif;
   background-color: #18191f; }
   footer .powered {
     font-size: 0.8rem; }

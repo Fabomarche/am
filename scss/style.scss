@@ -1,4 +1,5 @@
 //fonts
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Condensed:wght@400;700&display=swap");
 
 //colors
 $amarillo: #fbf47d;
@@ -12,6 +13,11 @@ $celesteClaro: #cfeef8;
 $naranja: #ffbb6c;
 $naranjaClaro: #ffe3c1;
 $negro: #18191f;
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
 /*---------------HEADER------------------*/
 header {
   margin-top: -1.25rem;
@@ -68,6 +74,7 @@ header {
 }
 
 #botones-papel {
+  font-family: "Inter", sans-serif;
   position: relative;
   top: 1em;
   a {
@@ -108,6 +115,7 @@ header {
 #btn-papel-iz:hover,
 #btn-papel-de:hover {
   transform: scale(1.1);
+  font-weight: bold;
 }
 
 .modal-content {
@@ -117,16 +125,8 @@ header {
 
 /*-----------STICKYS--------------*/
 #stickys {
-  margin-top: -100px;
+  margin-top: -75px;
   margin-left: 150px !important;
-}
-
-#hashtag {
-  position: relative;
-  top: 185px;
-  right: 125px;
-  font-weight: bold;
-  font-size: 0.9rem;
 }
 
 #stickyYellow {
@@ -204,6 +204,9 @@ header {
 /*-------------TESTIMONIOS----------------*/
 .testimonios {
   background-color: $rosaClaro;
+  h2 {
+    font-family: "Inter", sans-serif;
+  }
   .comillas {
     width: 14%;
     height: auto;
@@ -217,8 +220,11 @@ header {
 }
 
 .student {
-  color: white;
+  font-family: "Inter", sans-serif;
+  background-color: $amarilloClaro;
+  color: #474a57;
   text-align: center;
+  font-size: 0.8rem;
 }
 
 .rectangule {
@@ -299,6 +305,7 @@ header {
 /*--------------------------------END MAIN---------------------------------*/
 
 footer {
+  font-family: "Inter", sans-serif;
   background-color: $negro;
   .powered {
     font-size: 0.8rem;
