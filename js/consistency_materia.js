@@ -3,7 +3,8 @@ const btnCambiarCarrera = document.getElementById('btnCambiarCarrera')//footer
 
 if(sessionStorage.getItem('carrerra')){
     btnCarrera.innerText = sessionStorage.getItem('carrerra')
-    btnCambiarCarrera.innerHTML = sessionStorage.getItem('!carrerra')
+    consistency_testimonios()
+    // btnCambiarCarrera.innerHTML = sessionStorage.getItem('!carrerra')
 }
 
 // const changeCarrera = () => {

@@ -1,3 +1,4 @@
+const body = document.querySelector('.index-body')
 const modal = document.getElementById('modal')
 const spanCarrera = document.getElementById('carrerraSpan')
 // const btnCambiarCarrera = document.getElementById('btnCambiarCarrera')//footer
@@ -14,6 +15,7 @@ const renderArquitectura = () => {
     // sessionStorage.setItem('!carrerra', "Medicina")
     spanCarrera.innerText = sessionStorage.getItem('carrerra')
     consistency_testimonios()
+    body.style.overflow = "scroll"
     // btnCambiarCarrera.innerHTML = sessionStorage.getItem('!carrerra')
 }
 
@@ -22,6 +24,7 @@ const renderMedicina = () => {
     sessionStorage.setItem('carrerra', "Medicina")
     // sessionStorage.setItem('!carrerra', "Arquitectura")
     spanCarrera.innerText = sessionStorage.getItem('carrerra')
+    body.style.overflow = "scroll"
     consistency_testimonios()
     // btnCambiarCarrera.innerHTML = sessionStorage.getItem('!carrerra')
 

@@ -2,6 +2,9 @@
 body {
   font-family: "Roboto Condensed", sans-serif; }
 
+.index-body {
+  overflow: hidden; }
+
 /*---------------HEADER------------------*/
 header {
   margin-top: -1.25rem; }
