@@ -148,7 +148,7 @@ header {
   top: 8em;
   width: 14rem;
   height: 14rem;
-  background-color: #fbf47d;
+  background-color: #fffbb0;
   transform: rotate(10deg);
   z-index: 2;
   box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.2);
@@ -173,7 +173,7 @@ header {
   top: 2em;
   width: 11rem;
   height: 11rem;
-  background-color: #ffbb6c;
+  background-color: #ffe3c1;
   transform: rotate(-25deg);
   z-index: 0;
   box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -231,7 +231,7 @@ header {
 .rectangule {
   background-color: white;
   width: 30rem;
-  height: 10rem;
+  height: 19rem;
   border-radius: 12px;
   box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
   z-index: 1; }
@@ -263,33 +263,17 @@ header {
 
 /*-------------END TESTIMONIOS----------------*/
 /*-------------CONTACTO------------------------*/
-#contactoRosa {
-  background-color: #ff91ff;
-  margin: 1rem;
-  width: 15rem;
-  height: 17rem;
-  box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.2); }
+.rect-rosa {
+  background-color: #ffcfe6; }
 
-#contactoAmarillo {
-  background-color: #fbf47d;
-  margin: 1rem;
-  width: 15rem;
-  height: 17rem;
-  box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.2); }
+.rect-verde {
+  background-color: #d6f8cf; }
 
-#contactoCeleste {
-  background-color: #86d7f5;
-  margin: 1rem;
-  width: 15rem;
-  height: 17rem;
-  box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.2); }
+.rect-celeste {
+  background-color: #cfeef8; }
 
-#contactoVerde {
-  background-color: #a8f69c;
-  margin: 1rem;
-  width: 15rem;
-  height: 17rem;
-  box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.2); }
+.rect-naranja {
+  background-color: #ffe3c1; }
 
 /*---------------FORM-------------*/
 .btn-rosa {
@@ -299,6 +283,28 @@ header {
 
 /*---------------END FORM-------------*/
 /*-------------END CONTACTO------------------------*/
+/*-------------SOBRE NOSOTROS----------------------*/
+.nosotros p {
+  font-family: "Roboto", sans-serif; }
+
+.nosotros h3 {
+  text-decoration: underline;
+  text-decoration-color: #fbf47d;
+  text-decoration-thickness: 5px; }
+
+.resaltado-celeste {
+  background-color: #cfeef8;
+  width: fit-content; }
+
+.resaltado-verde {
+  background-color: #d6f8cf;
+  width: fit-content; }
+
+.resaltado-rosa {
+  background-color: #ffcfe6;
+  width: fit-content; }
+
+/*-------------END SOBRE NOSOTROS----------------------*/
 /*--------------------------------END MAIN---------------------------------*/
 footer {
   font-family: "Inter", sans-serif;

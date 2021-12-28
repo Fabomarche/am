@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>AM Clases Universitarias</title>
     <link rel="icon" type="image/png" href="./assets/img/Logo PNG.png"/>
 </head>
@@ -13,8 +13,8 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow py-0">
             <div class="container">
-                <a class="navbar-brand d-flex flex-column align-items-center py-0" href="index.html">
-                    <img src="./assets/img/Logo AM con LEYENDA.png" alt="" width="180" height="auto">
+                <a class="navbar-brand d-flex flex-column align-items-center py-0" href="../index.html">
+                    <img src="../assets/img/Logo AM con LEYENDA.png" alt="" width="180" height="auto">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -38,7 +38,7 @@
                                 <span id="carrerraSpan" class="navbar-text fs-3 ms-5 ps-5">Carrerra</span>
                             </div>
                             <div class="d-flex align-items-center w-100 justify-content-end">
-                                <a class="nosotros-link transition nav-link px-1 d-block" href="./html/nosotros.html">Sobre Nosotros</a>
+                                <a class="nosotros-link transition nav-link px-1 d-block" href="#">Sobre Nosotros</a>
                                 <span>|</span>
                                 <a class="materias-link transition nav-link px-1 " href="#">Materias</a>
                                 <span>|</span>
@@ -56,32 +56,19 @@
     </header>
 
     <main>
-        <section class="container d-flex justify-content-center fondoPapel ps-5 pe-0">
-            <div class="container w-100 my-3 h-100 pb-5 pt-2 mt-5 ms-5 ps-5">
-                <p class="fs-5">Somos estudiantes avanzados de las carreras por eso conocemos cuales son los problemas a la hora de estudiar.<br>
-                Ofrecemos un ambiente de confianza para que puedas consultar tus dudas sin miedo.<br>
-                Creamos nuestro propio material y hacemos seguimiento de las tareas que te proponemos.
-                </p>
-                <p class="fs-5 fw-bold ">Nuestro objetivo no es solo que apruebes, sino que aprendas.</p>
+        <section class="container fondoPapel p-5">
+            <div class="ms-5 nosotros">
+                <h3 class="fw-bold mb-4">Sobre Nosotros</h3>
+                <h5 class="resaltado-celeste mt-5">¿De dónde salimos?</h5>
+                <p>Somos estudiantes de los últimos años de las carreras, desde 2018 formamos un espacio de aprendizaje, buscando un clima amigable, <br>juvenil y alegre con la  idea de renovar la forma de aprender la materia.</p>
+                <h5 class="resaltado-verde mt-5">¿Qué podemos hacer juntos?</h5>
+                <p>Nos caracteriza un ambiente de confianza, donde podes hacer todas las consultas y dudas que tengas.<br>
+                    Nuestro objetivo no solo es ayudarte a aprobar si no también aprender y no bajar los brazos.
+                    </p>
+                <h5 class="resaltado-rosa mt-5">¿Cómo la rompemos?</h5>
+                <p>Nosotros sabemos cuales son los problemas que podes tener a la hora estudiar, por eso, brindamos clases personalizadas y <br>creamos nuestros propios materiales de estudio además de hacer seguimiento a las tareas que proponemos.</p>
             </div>
-            <div id="stickys" class="mb-5 pb-5">
-                <a href="index.html" class="text-decoration-none text-dark">
-                <div id="stickyYellow">
-                        <img src="./assets/img/Logo AM con LEYENDA.png" alt="">
-                    </div>
-                </a>
-
-                <a href="#" class="text-decoration-none text-dark">
-                    <div id="stickyPink">
-                        <span>Materias</span>
-                    </div>
-                </a>
-                <a href="#" class="text-decoration-none text-dark">
-                    <div id="stickyOrange">
-                        <span>Cursos</span>
-                    </div>
-                </a>
-            </div>
+        
 
         </section>
         <section class="testimonios">
@@ -97,7 +84,7 @@
                                 <div id="quote" class="w-50 d-flex flex-column align-items-center">
                                     <div>
                                         <div class="rectangule">
-                                            <div class="quoteText container ">
+                                            <div class="quoteText container d-flex flex-column align-items-center">
                                                 <!-- Testimonio 1 -->
                                                 <h5 id="1-testimonio-title" class="py-2"></h5>
                                                 <p id="1-testimonio-p"></p>
@@ -114,7 +101,7 @@
                                     </div>
                                     
                                 </div>
-                                <div id="quote" class="w-50 d-flex flex-column align-items-center justify-content-center">
+                                <div id="quote" class="w-50 d-flex flex-column align-items-center">
                                     <div>
                                         <div class="rectangule">
                                             <div class="quoteText container">
@@ -189,34 +176,14 @@
         </section>
     </main>
 
-    <div class="modal " tabindex="-1" id="modal" aria-labelledby="modalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg w-50">
-            <div id="papel-amarillo"></div>
-            <div class="modal-content">
-                <div class="modal-body ms-5 p-5">
-                    <h5 class="fw-bold fs-4">¡Te damos la bienvenida!</h5>
-                    <p class="fs-4">Hemos creado este nuevo espacio para que estemos más cerca.</p>
-                    <h5 class="fw-bold fs-5">Elige una carrera para poder comenzar:</h5>
-                </div>
-                <div id="botones-papel" class="d-flex justify-content-center">
-                    <a onclick="renderArquitectura()" class="text-decoration-none text-dark">
-                        <div id="btn-papel-iz" class="me-4"><span>Arquitectura</span></div>
-                    </a>
-                    <a onclick="renderMedicina()" class="text-decoration-none text-dark">
-                        <div id="btn-papel-de" class="ms-4"><span>Medicina</span></div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
     </div>
     <a class="whatsapp" href="#" target="_blank">
-        <img src="./assets/img/whatsapp.svg" alt="">
+        <img src="../assets/img/whatsapp.svg" alt="">
     </a>
     
     <footer class="pt-2 pb-1">
         <nav class="navbar navbar-expand-lg navbar-dark d-flex flex-column align-items-center text-white">
-            <div><img src="./assets/img/Logo blanco PNG 1.png" alt=""></div>
+            <div><img src="../assets/img/Logo blanco PNG 1.png" alt=""></div>
             <div>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
@@ -232,7 +199,7 @@
                     <a class="nav-link" href="#">Recursos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./html/contacto.html">Contacto</a>
+                    <a class="nav-link" href="../html/contacto.html">Contacto</a>
                 </li>
                 <!-- <li class="nav-item">
                     <a id="btnCambiarCarrera" class="nav-link" href="#"  onclick="changeCarrera()">Carrera</a>
@@ -244,10 +211,10 @@
     </footer>
     <!------------------------------------------------------------------------------------------------------------------------------>
     <!------------------------------------------------------SCRIPTS ----------------------------------------------------------->
+    <script src="../js/redirect.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    <script src="./js/testimonios.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 </html>
