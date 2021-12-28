@@ -305,6 +305,31 @@ header {
   width: fit-content; }
 
 /*-------------END SOBRE NOSOTROS----------------------*/
+/*---------------RECURSOS-----------------------*/
+#render-recursos a {
+  text-decoration: none;
+  color: #18191f; }
+
+#render-recursos a:hover h5 {
+  font-weight: bold; }
+
+#papel-recursos {
+  position: relative;
+  background-color: #86d7f578;
+  width: 16rem;
+  height: 5rem;
+  left: -7rem;
+  top: -5rem; }
+  #papel-recursos span {
+    position: relative;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #18191f;
+    left: 3rem;
+    top: 1rem; }
+
+/*---------------END RECURSOS-----------------------*/
 /*--------------------------------END MAIN---------------------------------*/
 footer {
   font-family: "Inter", sans-serif;

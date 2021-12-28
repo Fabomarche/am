@@ -360,6 +360,39 @@ header {
   width: fit-content;
 }
 /*-------------END SOBRE NOSOTROS----------------------*/
+
+/*---------------RECURSOS-----------------------*/
+#render-recursos {
+  a {
+    text-decoration: none;
+    color: $negro;
+  }
+  a:hover {
+    h5 {
+      font-weight: bold;
+    }
+  }
+}
+#papel-recursos {
+  position: relative;
+  background-color: #86d7f578;
+  width: 16rem;
+  height: 5rem;
+  left: -7rem;
+  top: -5rem;
+  span {
+    position: relative;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: $negro;
+    left: 3rem;
+    top: 1rem;
+  }
+}
+
+/*---------------END RECURSOS-----------------------*/
+
 /*--------------------------------END MAIN---------------------------------*/
 
 footer {
