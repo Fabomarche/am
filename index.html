@@ -14,7 +14,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow py-0">
             <div class="container">
                 <a class="navbar-brand d-flex flex-column align-items-center py-0" href="#">
-                    <img src="./assets/img/Logo AM con LEYENDA.png" alt="" width="150" height="auto">
+                    <img src="./assets/img/Logo AM con LEYENDA.png" alt="" width="180" height="auto">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -22,16 +22,24 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="container d-flex flex-column w-100 align-items-end">
                         <div class="navbar-nav">
-                            <a class="nav-item nav-link" href="https://www.instagram.com/amclases"><img src="./assets/img/instagram.svg" alt=""></a>
-                            <a class="nav-item nav-link" href="#"><img src="./assets/img/facebook.svg" alt=""></a>
-                            <a class="nav-item nav-link" href="amclasesrosario@gmail.com"><img src="./assets/img/mail.svg" alt=""></a>
+                            <a  class="nav-item nav-link" href="https://www.instagram.com/amclases">
+                                <div id="insta-header"></div>
+                            </a>
+                            <a class="nav-item nav-link" href="#">
+                                <div id="face-header"></div>
+                            </a>
+                            <a class="nav-item nav-link" href="amclasesrosario@gmail.com">
+                                <div id="mail-header"></div>
+                            </a>
                         </div>
                         <hr class="w-100 my-1">
                         <div class="navbar-nav d-flex align-items-center justify-content-between w-100 mt-2">
-                            <div class="d-flex justify-content-center w-100">
-                                <span id="carrerraSpan" class="navbar-text fs-3">Carrerra</span>
+                            <div class="d-flex justify-content-center w-100 ms-5">
+                                <span id="carrerraSpan" class="navbar-text fs-3 ms-5 ps-5">Carrerra</span>
                             </div>
-                            <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center w-100 justify-content-end">
+                                <a class="nosotros-link transition nav-link px-1 d-block" href="#">Sobre Nosotros</a>
+                                <span>|</span>
                                 <a class="materias-link transition nav-link px-1 " href="#">Materias</a>
                                 <span>|</span>
                                 <a class="cursos-link transition nav-link px-1" href="#">Cursos</a>
@@ -48,17 +56,16 @@
     </header>
 
     <main>
-        <section class="container d-flex justify-content-center fondoPapel">
-            <div class="container w-50 my-3 mx-4 h-100 pb-5 pt-2 mt-5">
-                <h2 class="fs-4 fw-bold">¿De dónde salimos?</h2>
-                <p>En 2018 creamos un espacio de aprendizaje, buscando un clima amigable, juvenil y alegre con la idea de renovar la forma de enseñar las materias.</p>
-                <h2 class="fs-4 fw-bold">¿Qué podemos hacer juntos?</h2>
-                <p>Hemos creado un ambiente de confianza para que en cada clase puedas consultar cualquier duda que tengas, sin miedo, porque nuestro objetivo no solo es ayudarte a aprobar si no también a aprender.</p>
-                <h2 class="fs-4 fw-bold">¿Cómo la rompemos?</h2>
-                <p>Como estudiantes de los últimos años de las carreras sabemos cuales son los problemas que podes tener a la hora estudiar, por eso, brindamos clases personalizadas y creamos nuestros propios materiales de estudio además de hacer un seguimiento a las tareas que proponemos.</p>
+        <section class="container d-flex justify-content-center fondoPapel ps-5 pe-0">
+            <div class="container w-100 my-3 h-100 pb-5 pt-2 mt-5 ms-5 ps-5">
+                <p class="fs-5">Somos estudiantes avanzados de las carreras por eso conocemos cuales son los problemas a la hora de estudiar.<br>
+                Ofrecemos un ambiente de confianza para que puedas consultar tus dudas sin miedo.<br>
+                Creamos nuestro propio material y hacemos seguimiento de las tareas que te proponemos.
+                </p>
+                <p class="fs-5 fw-bold ">Nuestro objetivo no es solo que apruebes, sino que aprendas.</p>
             </div>
-            <div id="stickys" class="mb-5 pb-5 ms-5">
-                <a href="#" class="text-decoration-none text-dark">
+            <div id="stickys" class="mb-5 pb-5">
+                <a href="#" class="text-decoration-none text-dark" target="_blank">
                 <div id="stickyYellow">
                         <img src="./assets/img/Logo AM con LEYENDA.png" alt="">
                     </div>
@@ -91,8 +98,9 @@
                                     <div>
                                         <div class="rectangule">
                                             <div class="quoteText container">
-                                                <h5 class="py-2">Incredible Experience</h5>
-                                                <p>We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the concept so quickly. It acted as a catalyst to take our design to the next level and get more eyes on our product.</p>
+                                                <!-- Testimonio 1 -->
+                                                <h5 id="1-testimonio-title" class="py-2"></h5>
+                                                <p id="1-testimonio-p"></p>
                                             </div>
                                         </div>
                                         <div class="triangule"></div>
@@ -101,8 +109,7 @@
                                     <div class="student d-flex p-2">
                                         <img class="me-3"src="./assets/img/corazon.svg" alt="">
                                         <div class="text-start">
-                                            <h6 class="mb-0 fw-bold">Jane Cooper</h6>
-                                            <span>CEO, ABC Corporation</span>
+                                            <h6 id="1-testimonio-alumno"class="mb-0 fw-bold"></h6>
                                         </div>
                                     </div>
                                     
@@ -111,8 +118,9 @@
                                     <div>
                                         <div class="rectangule">
                                             <div class="quoteText container">
-                                                <h5 class="py-2">Incredible Experience</h5>
-                                                <p>We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the concept so quickly. It acted as a catalyst to take our design to the next level and get more eyes on our product.</p>
+                                                <!-- Testimonio 2 -->
+                                                <h5 id="2-testimonio-title"class="py-2"></h5>
+                                                <p id="2-testimonio-p"></p>
                                             </div>
                                         </div>
                                         <div class="triangule"></div>
@@ -120,8 +128,7 @@
                                     <div class="student d-flex p-2">
                                         <img class="me-3"src="./assets/img/corazon.svg" alt="">
                                         <div class="text-start">
-                                            <h6 class="mb-0 fw-bold">Jane Cooper</h6>
-                                            <span>CEO, ABC Corporation</span>
+                                            <h6 id="2-testimonio-alumno" class="mb-0 fw-bold"></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -133,8 +140,9 @@
                                     <div>
                                         <div class="rectangule">
                                             <div class="quoteText container">
-                                                <h5 class="py-2">Incredible Experience</h5>
-                                                <p>We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the concept so quickly. It acted as a catalyst to take our design to the next level and get more eyes on our product.</p>
+                                                <!-- Testimonio 3 -->
+                                                <h5 id="3-testimonio-title" class="py-2"></h5>
+                                                <p id="3-testimonio-p"></p>
                                             </div>
                                         </div>
                                         <div class="triangule"></div>
@@ -143,8 +151,7 @@
                                     <div class="student d-flex p-2">
                                         <img class="me-3"src="./assets/img/corazon.svg" alt="">
                                         <div class="text-start">
-                                            <h6 class="mb-0 fw-bold">Jane Cooper</h6>
-                                            <span>CEO, ABC Corporation</span>
+                                            <h6 id="3-testimonio-alumno"class="mb-0 fw-bold"></h6>
                                         </div>
                                     </div>
                                     
@@ -153,8 +160,9 @@
                                     <div>
                                         <div class="rectangule">
                                             <div class="quoteText container">
-                                                <h5 class="py-2">Incredible Experience</h5>
-                                                <p>We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the concept so quickly. It acted as a catalyst to take our design to the next level and get more eyes on our product.</p>
+                                                <!-- Testimonio 4 -->
+                                                <h5 id="4-testimonio-title"class="py-2"></h5>
+                                                <p id="4-testimonio-p"></p>
                                             </div>
                                         </div>
                                         <div class="triangule"></div>
@@ -162,50 +170,7 @@
                                     <div class="student d-flex p-2">
                                         <img class="me-3"src="./assets/img/corazon.svg" alt="">
                                         <div class="text-start">
-                                            <h6 class="mb-0 fw-bold">Jane Cooper</h6>
-                                            <span>CEO, ABC Corporation</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="10000">
-                            <div class="d-flex">
-                                <div id="quote" class="w-50 d-flex flex-column align-items-center">
-                                    <div>
-                                        <div class="rectangule">
-                                            <div class="quoteText container">
-                                                <h5 class="py-2">Incredible Experience</h5>
-                                                <p>We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the concept so quickly. It acted as a catalyst to take our design to the next level and get more eyes on our product.</p>
-                                            </div>
-                                        </div>
-                                        <div class="triangule"></div>
-                                    </div>
-                                
-                                    <div class="student d-flex p-2">
-                                        <img class="me-3"src="./assets/img/corazon.svg" alt="">
-                                        <div class="text-start">
-                                            <h6 class="mb-0 fw-bold">Jane Cooper</h6>
-                                            <span>CEO, ABC Corporation</span>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                <div id="quote" class="w-50 d-flex flex-column align-items-center">
-                                    <div>
-                                        <div class="rectangule">
-                                            <div class="quoteText container">
-                                                <h5 class="py-2">Incredible Experience</h5>
-                                                <p>We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the concept so quickly. It acted as a catalyst to take our design to the next level and get more eyes on our product.</p>
-                                            </div>
-                                        </div>
-                                        <div class="triangule"></div>
-                                    </div>
-                                    <div class="student d-flex p-2">
-                                        <img class="me-3"src="./assets/img/corazon.svg" alt="">
-                                        <div class="text-start">
-                                            <h6 class="mb-0 fw-bold">Jane Cooper</h6>
-                                            <span>CEO, ABC Corporation</span>
+                                            <h6 id="4-testimonio-alumno" class="mb-0 fw-bold"></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -224,14 +189,14 @@
         </section>
     </main>
 
-    <div class="modal" tabindex="-1" id="modal" aria-labelledby="modalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <div class="modal " tabindex="-1" id="modal" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg w-50">
             <div id="papel-amarillo"></div>
-            <div class="modal-content px-5">
-            <div class="modal-body ms-4">
-                    <p>¡Bienvenidos! hemos creado este nuevo espacio para que estemos más cerca.
-                    </p>
-                    <h5>Elige una carrera para poder comenzar:</h5>
+            <div class="modal-content">
+                <div class="modal-body ms-5 p-5">
+                    <h5 class="fw-bold fs-4">¡Te damos la bienvenida!</h5>
+                    <p class="fs-4">Hemos creado este nuevo espacio para que estemos más cerca.</p>
+                    <h5 class="fw-bold fs-5">Elige una carrera para poder comenzar:</h5>
                 </div>
                 <div id="botones-papel" class="d-flex justify-content-center">
                     <a onclick="renderArquitectura()" class="text-decoration-none text-dark">
@@ -243,14 +208,20 @@
                 </div>
             </div>
         </div>
+
     </div>
-
-
-    <footer class="pt-4 pb-1">
+    <a class="whatsapp" href="#" target="_blank">
+        <img src="./assets/img/whatsapp.svg" alt="">
+    </a>
+    
+    <footer class="pt-2 pb-1">
         <nav class="navbar navbar-expand-lg navbar-dark d-flex flex-column align-items-center text-white">
-            <span class="fw-bold p-3">AM-clases</span>
+            <div><img src="./assets/img/Logo blanco PNG 1.png" alt=""></div>
             <div>
                 <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                    </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Materias</a>
                 </li>
@@ -263,9 +234,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="./html/contacto.html">Contacto</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a id="btnCambiarCarrera" class="nav-link" href="#"  onclick="changeCarrera()">Carrera</a>
-                </li>
+                </li> -->
                 </ul>
             </div>
             <p class="mt-5 text-muted powered">Powered by <a class="text-decoration-none text-white" href="">Germán Walton</a> & <a class="text-decoration-none text-white" href="https://www.linkedin.com/in/fabricio-marchetti">Fabricio Marchetti</a></p>
@@ -276,7 +247,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="./js/testimonios.js"></script>
     <script src="./js/index.js"></script>
-    <script src="./js/consistency_materia.js"></script>
 </body>
 </html>
