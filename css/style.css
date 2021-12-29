@@ -349,6 +349,8 @@ footer {
     font-size: 0.9rem; }
   /*--------------END HEADER------------------*/
   /*-----------MAIN------------------*/
+  .whatsapp {
+    left: 75%; }
   /*----------MODAL----------------*/
   #papel-amarillo {
     position: relative;
