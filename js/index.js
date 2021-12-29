@@ -14,7 +14,8 @@ const renderArquitectura = () => {
     modal.style.display = "none"
     sessionStorage.setItem('carrerra', "Arquitectura")
     // sessionStorage.setItem('!carrerra', "Medicina")
-    spanCarrera.innerText, spanCarrera2.innerText = sessionStorage.getItem('carrerra')
+    spanCarrera.innerText = sessionStorage.getItem('carrerra')
+    spanCarrera2.innerText = sessionStorage.getItem('carrerra')
     consistency_testimonios()
     body.style.overflow = "scroll"
     // btnCambiarCarrera.innerHTML = sessionStorage.getItem('!carrerra')
@@ -24,7 +25,8 @@ const renderMedicina = () => {
     modal.style.display = "none"
     sessionStorage.setItem('carrerra', "Medicina")
     // sessionStorage.setItem('!carrerra', "Arquitectura")
-    spanCarrera.innerText, spanCarrera2.innerText = sessionStorage.getItem('carrerra')
+    spanCarrera.innerText = sessionStorage.getItem('carrerra')
+    spanCarrera2.innerText = sessionStorage.getItem('carrerra')
     body.style.overflow = "scroll"
     consistency_testimonios()
     // btnCambiarCarrera.innerHTML = sessionStorage.getItem('!carrerra')
