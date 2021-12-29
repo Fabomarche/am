@@ -13,15 +13,15 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow py-0">
             <div class="container">
-                <a class="navbar-brand d-flex flex-column align-items-center py-0" href="index.html">
-                    <img src="./assets/img/Logo AM con LEYENDA.png" alt="" width="180" height="auto">
+                <a class="navbar-brand py-0 w-25 pt-3 pt-md-0 w-md-100" href="index.html">
+                    <img src="./assets/img/Logo AM con LEYENDA.png" alt="logo AM" class="img-fluid" width="180" height="auto">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="container d-flex flex-column w-100 align-items-end">
-                        <div class="navbar-nav">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="container px-0 px-md-1 d-flex flex-column w-100 align-items-end">
+                        <div class="navbar-nav d-flex flex-row">
                             <a  class="nav-item nav-link" href="https://www.instagram.com/amclases" target="_blank">
                                 <div id="insta-header"></div>
                             </a>
@@ -35,10 +35,10 @@
                         <hr class="w-100 my-1">
                         <div class="navbar-nav d-flex align-items-center justify-content-between w-100 mt-2">
                             <div class="d-flex justify-content-center w-100 ms-5">
-                                <span id="carrerraSpan" class="navbar-text fs-3 ms-5 ps-5">Carrerra</span>
+                                <span id="carrerraSpan" class="d-none d-md-block navbar-text fs-3 ms-5 ps-5">Carrerra</span>
                             </div>
-                            <div class="d-flex align-items-center w-100 justify-content-end">
-                                <a class="nosotros-link transition nav-link px-1 d-block" href="./html/nosotros.html">Sobre Nosotros</a>
+                            <div class="d-flex align-items-center w-100 justify-content-end fs-header">
+                                <a class="nosotros-link transition nav-link px-1 d-block text-nowrap" href="./html/nosotros.html">Sobre Nosotros</a>
                                 <span>|</span>
                                 <a class="materias-link transition nav-link px-1 " href="#">Materias</a>
                                 <span>|</span>
@@ -51,13 +51,21 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div  class="d-md-none container d-flex justify-content-center">
+                <span  id="carrerraSpan2" class="navbar-text fs-3">Carrerra</span>
             </div>    
         </nav>
+        
+
+
+
+        
     </header>
 
     <main>
-        <section class="container d-flex justify-content-center fondoPapel ps-5 pe-0">
-            <div class="container w-100 my-3 h-100 pb-5 pt-2 mt-5 ms-5 ps-5">
+        <section class="container d-flex flex-column flex-md-row justify-content-center fondoPapel ps-5 pe-0">
+            <div class="container w-100 my-3 h-100 pb-md-5 pt-2 mt-5 ms-md-5 ps-5">
                 <p class="fs-5">Somos estudiantes avanzados de las carreras por eso conocemos cuales son los problemas a la hora de estudiar.<br>
                 Ofrecemos un ambiente de confianza para que puedas consultar tus dudas sin miedo.<br>
                 Creamos nuestro propio material y hacemos seguimiento de las tareas que te proponemos.
@@ -190,17 +198,17 @@
     </main>
 
     <div class="modal" tabindex="-1" id="modal" aria-labelledby="modalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg w-50">
+        <div class="modal-dialog modal-lg w-md-50 mt-5 pt-5">
             <div id="papel-amarillo"></div>
             <div class="modal-content">
-                <div class="modal-body ms-5 p-5">
+                <div class="modal-body ms-md-5 ms-3 p-5">
                     <h5 class="fw-bold fs-4">¡Te damos la bienvenida!</h5>
                     <p class="fs-4">Hemos creado este nuevo espacio para que estemos más cerca.</p>
                     <h5 class="fw-bold fs-5">Elige una carrera para poder comenzar:</h5>
                 </div>
                 <div id="botones-papel" class="d-flex justify-content-center">
                     <a onclick="renderArquitectura()" class="text-decoration-none text-dark">
-                        <div id="btn-papel-iz" class="me-4"><span>Arquitectura</span></div>
+                        <div id="btn-papel-iz" class="mS-4"><span>Arquitectura</span></div>
                     </a>
                     <a onclick="renderMedicina()" class="text-decoration-none text-dark">
                         <div id="btn-papel-de" class="ms-4"><span>Medicina</span></div>
@@ -229,7 +237,7 @@
                     <a class="nav-link" href="#">Cursos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Recursos</a>
+                    <a class="nav-link" href="./html/recursos.html">Recursos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./html/contacto.html">Contacto</a>
@@ -244,9 +252,9 @@
     </footer>
     <!------------------------------------------------------------------------------------------------------------------------------>
     <!------------------------------------------------------SCRIPTS ----------------------------------------------------------->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
     <script src="./js/testimonios.js"></script>
     <script src="./js/index.js"></script>
 </body>
