@@ -471,16 +471,6 @@ footer {
     }
   }
 
-  #btn-papel-iz:hover,
-  #btn-papel-de:hover {
-    transform: scale(1.1);
-    font-weight: bold;
-  }
-
-  .modal-content {
-    background-image: url("../assets/img/hoja_papel_612x612.png");
-    background-size: cover;
-  }
   /*----------END MODAL----------------*/
 
   /*-----------STICKYS--------------*/
@@ -490,6 +480,28 @@ footer {
   }
 
   /*-----------END STICKYS--------------*/
+
+  /*---------------RECURSOS-----------------------*/
+
+  #papel-recursos {
+    position: relative;
+    background-color: #86d7f578;
+    width: 10rem;
+    height: 5rem;
+    left: -6.5rem;
+    top: 1.5rem;
+    span {
+      position: relative;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: $negro;
+      left: 3rem;
+      top: 1rem;
+    }
+  }
+
+  /*---------------END RECURSOS-----------------------*/
 
   /*-----------END MAIN------------------*/
   /*////////////////////////////////////////////////////////////////////////////////*/
