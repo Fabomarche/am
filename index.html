@@ -93,13 +93,15 @@
 
         </section>
         <section class="testimonios">
-            <div class="container p-5">
-                <div class="d-flex justify-content-lg-between">
-                    <h2 class="text-white pb-5 fw-bold fs-1">Testimonios</h2>
+            <div class="container p-3 p-md-5">
+                <div class="d-flex justify-content-between ">
+                    <h2 class="text-white pb-2 pb-md-5 fw-bold fs-1">Testimonios</h2>
                     <img class="opacity-25 comillas" src="./assets/img/comillas.svg" alt="">
                 </div>
                 <div id="carouselExampleControls" class="carousel carousel-light slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
+                    <!-- DESKTOP VERSION -->
+                    <div class="carousel-inner d-none d-md-block">
+                        <!-- carousel-item 1 -->
                         <div class="carousel-item active" data-bs-interval="20000">
                             <div class="d-flex">
                                 <div id="quote" class="w-50 d-flex flex-column align-items-center">
@@ -142,6 +144,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- carousel-item 2 -->
                         <div class="carousel-item" data-bs-interval="10000">
                             <div class="d-flex">
                                 <div id="quote" class="w-50 d-flex flex-column align-items-center">
@@ -185,6 +188,110 @@
                             </div>
                         </div>
                     </div>
+                    <!-- END DESKTOP VERSION -->
+                                                <!-- ################################################ -->
+                    <!-- MOBILE VERSION -->
+                    <div class="carousel-inner d-block d-md-none">
+                        <!-- carousel-item 1 -->
+                        <div class="carousel-item active" data-bs-interval="20000">
+                            <div class="d-flex">
+                                <div id="quote" class="w-50 d-flex flex-column align-items-center">
+                                    <div>
+                                        <div class="rectangule d-flex align-items-center">
+                                            <div class="quoteText container ">
+                                                <!-- Testimonio 1 -->
+                                                <h5 id="1-mb-testimonio-title" class="py-2"></h5>
+                                                <p id="1-mb-testimonio-p"></p>
+                                            </div>
+                                        </div>
+                                        <div class="triangule"></div>
+                                    </div>
+                                
+                                    <div class="student d-flex p-2">
+                                        <img class="me-3"src="./assets/img/corazon.svg" alt="">
+                                        <div class="text-start">
+                                            <h6 id="1-mb-testimonio-alumno"class="mb-0 fw-bold"></h6>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- carousel-item 2 -->
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <div class="d-flex">
+                                <div id="quote" class="w-50 d-flex flex-column align-items-center">
+                                    <div>
+                                        <div class="rectangule d-flex align-items-center">
+                                            <div class="quoteText container">
+                                                <!-- Testimonio 3 -->
+                                                <h5 id="3-testimonio-title" class="py-2"></h5>
+                                                <p id="3-testimonio-p"></p>
+                                            </div>
+                                        </div>
+                                        <div class="triangule"></div>
+                                    </div>
+                                
+                                    <div class="student d-flex p-2">
+                                        <img class="me-3"src="./assets/img/corazon.svg" alt="">
+                                        <div class="text-start">
+                                            <h6 id="3-testimonio-alumno"class="mb-0 fw-bold"></h6>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- carousel-item 3 -->
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <div class="d-flex">
+                                <div id="quote" class="w-50 d-flex flex-column align-items-center">
+                                    <div>
+                                        <div class="rectangule d-flex align-items-center">
+                                            <div class="quoteText container">
+                                                <!-- Testimonio 3 -->
+                                                <h5 id="3-testimonio-title" class="py-2"></h5>
+                                                <p id="3-testimonio-p"></p>
+                                            </div>
+                                        </div>
+                                        <div class="triangule"></div>
+                                    </div>
+                                
+                                    <div class="student d-flex p-2">
+                                        <img class="me-3"src="./assets/img/corazon.svg" alt="">
+                                        <div class="text-start">
+                                            <h6 id="3-testimonio-alumno"class="mb-0 fw-bold"></h6>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- carousel-item 4 -->
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <div class="d-flex">
+                                <div id="quote" class="w-50 d-flex flex-column align-items-center">
+                                    <div>
+                                        <div class="rectangule d-flex align-items-center">
+                                            <div class="quoteText container">
+                                                <!-- Testimonio 4 -->
+                                                <h5 id="4-testimonio-title"class="py-2"></h5>
+                                                <p id="4-testimonio-p"></p>
+                                            </div>
+                                        </div>
+                                        <div class="triangule"></div>
+                                    </div>
+                                    <div class="student d-flex p-2">
+                                        <img class="me-3"src="./assets/img/corazon.svg" alt="">
+                                        <div class="text-start">
+                                            <h6 id="4-testimonio-alumno" class="mb-0 fw-bold"></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END MOBILE VERSION -->
                     <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
@@ -194,6 +301,7 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
+            </div>
         </section>
     </main>
 
@@ -218,43 +326,43 @@
         </div>
 
     </div>
+   
     <a class="whatsapp" href="#" target="_blank">
         <img src="./assets/img/whatsapp.svg" alt="">
     </a>
     
     <footer class="pt-2 pb-1">
         <nav class="navbar navbar-expand-lg navbar-dark d-flex flex-column align-items-center text-white">
-            <div><img src="./assets/img/Logo blanco PNG 1.png" alt=""></div>
+            <div class="w-25 w-md-100 d-flex justify-content-center"><img src="./assets/img/Logo blanco PNG 1.png" class="img-fluid" alt="logo AM white"></div>
             <div>
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
+                <ul class="navbar-nav d-flex flex-row flex-wrap justify-content-center">
+                    <li class="nav-item mx-2">
                         <a class="nav-link" href="./html/nosotros.html">Sobre Nosotros</a>
                     </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Materias</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Cursos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./html/recursos.html">Recursos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./html/contacto.html">Contacto</a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a id="btnCambiarCarrera" class="nav-link" href="#"  onclick="changeCarrera()">Carrera</a>
-                </li> -->
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Materias</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Cursos</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="./html/recursos.html">Recursos</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="./html/contacto.html">Contacto</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a id="btnCambiarCarrera" class="nav-link" href="#"  onclick="changeCarrera()">Carrera</a>
+                    </li> -->
                 </ul>
             </div>
-            <p class="mt-5 text-muted powered">Powered by <a class="text-decoration-none text-white" href="">Germán Walton</a> & <a class="text-decoration-none text-white" href="https://www.linkedin.com/in/fabricio-marchetti">Fabricio Marchetti</a></p>
+            <p class="mt-3 mt-md-5 text-muted powered">Powered by <a class="text-decoration-none text-white" href="">Germán Walton</a> & <a class="text-decoration-none text-white" href="https://www.linkedin.com/in/fabricio-marchetti">Fabricio Marchetti</a></p>
         </nav>
     </footer>
     <!------------------------------------------------------------------------------------------------------------------------------>
     <!------------------------------------------------------SCRIPTS ----------------------------------------------------------->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
     <script src="./js/testimonios.js"></script>
     <script src="./js/index.js"></script>
 </body>
