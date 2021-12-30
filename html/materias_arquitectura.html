@@ -19,63 +19,128 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-white shadow py-0">
         <div class="container">
           <a
-            class="navbar-brand d-flex flex-column align-items-center py-0"
+            class="navbar-brand py-0 w-25 pt-3 pt-md-0 w-md-100"
             href="../index.html"
           >
             <img
-              src="../assets/img/Logo PNG.png"
-              alt=""
-              width="150"
+              src="../assets/img/Logo AM con LEYENDA.png"
+              alt="logo AM"
+              class="img-fluid"
+              width="180"
               height="auto"
             />
-            <span class="textoLogo">Clases Universitarias</span>
           </a>
           <button
             class="navbar-toggler"
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="container d-flex flex-column w-100 align-items-end">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link" href="#"
-                  ><img src="../assets/img/instagram.svg" alt=""
-                /></a>
-                <a class="nav-item nav-link" href="#"
-                  ><img src="../assets/img/facebook.svg" alt=""
-                /></a>
-                <a class="nav-item nav-link" href="#"
-                  ><img src="../assets/img/mail.svg" alt=""
-                /></a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div
+              class="
+                container
+                px-0 px-md-1
+                d-flex
+                flex-column
+                w-100
+                align-items-end
+              "
+            >
+              <div class="navbar-nav d-flex flex-row">
+                <a
+                  class="nav-item nav-link"
+                  href="https://www.instagram.com/amclases"
+                  target="_blank"
+                >
+                  <div id="insta-header"></div>
+                </a>
+                <a
+                  class="nav-item nav-link"
+                  href="https://www.facebook.com/amclases"
+                  target="_blank"
+                >
+                  <div id="face-header"></div>
+                </a>
+                <a
+                  class="nav-item nav-link"
+                  href="mailto:amclasesrosario@gmail.com"
+                  target="_blank"
+                >
+                  <div id="mail-header"></div>
+                </a>
               </div>
               <hr class="w-100 my-1" />
-              <div class="navbar-nav d-flex align-items-center">
-                <span id="carrerraSpan" class="navbar-text px-5 fs-4"
-                  >Carrerra</span
+              <div
+                class="
+                  navbar-nav
+                  d-flex
+                  align-items-center
+                  justify-content-between
+                  w-100
+                  mt-2
+                "
+              >
+                <div class="d-flex justify-content-center w-100 ms-5">
+                  <span
+                    id="carrerraSpan"
+                    class="d-none d-md-block navbar-text fs-3 ms-5 ps-5"
+                    >Carrerra</span
+                  >
+                </div>
+                <div
+                  class="
+                    d-flex
+                    align-items-center
+                    w-100
+                    justify-content-end
+                    fs-header
+                  "
                 >
-                <a class="materias-link transition nav-link px-5" href="#"
-                  >Materias</a
-                >
-                <a class="cursos-link transition nav-link px-5" href="#"
-                  >Cursos</a
-                >
-                <a class="recursos-link transition nav-link px-5" href="#"
-                  >Recursos</a
-                >
-                <a
-                  class="contacto-link transition nav-link px-5"
-                  href="../html/contacto.html"
-                  >Contacto</a
-                >
+                  <a
+                    class="
+                      nosotros-link
+                      transition
+                      nav-link
+                      px-1
+                      d-block
+                      text-nowrap
+                    "
+                    href="../html/nosotros.html"
+                    >Sobre Nosotros</a
+                  >
+                  <span>|</span>
+                  <a class="materias-link transition nav-link px-1" href="#"
+                    >Materias</a
+                  >
+                  <span>|</span>
+                  <a class="cursos-link transition nav-link px-1" href="#"
+                    >Cursos</a
+                  >
+                  <span>|</span>
+                  <a
+                    class="recursos-link transition nav-link px-1"
+                    href="../html/recursos.html"
+                    >Recursos</a
+                  >
+                  <span>|</span>
+                  <a
+                    class="contacto-link transition nav-link px-1"
+                    href="../html/contacto.html"
+                    >Contacto</a
+                  >
+                </div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="d-md-none container d-flex justify-content-center">
+          <span id="carrerraSpan2" class="navbar-text fs-3">Carrerra</span>
         </div>
       </nav>
     </header>
@@ -277,7 +342,7 @@
       </section>
     </main>
 
-    <footer class="pt-4 pb-1">
+    <footer class="pt-2 pb-1">
       <nav
         class="
           navbar navbar-expand-lg navbar-dark
@@ -287,33 +352,40 @@
           text-white
         "
       >
-        <span class="fw-bold p-3">AM-clases</span>
+        <div class="w-25 w-md-100 d-flex justify-content-center">
+          <img
+            src="../assets/img/Logo blanco PNG 1.png"
+            class="img-fluid"
+            alt="logo AM white"
+          />
+        </div>
         <div>
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Materias</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Cursos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Recursos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a
-                id="btnCambiarCarrera"
-                class="nav-link"
-                href="#"
-                onclick="changeCarrera()"
-                >Carrera</a
+          <ul
+            class="navbar-nav d-flex flex-row flex-wrap justify-content-center"
+          >
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="../html/nosotros.html"
+                >Sobre Nosotros</a
               >
             </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">Materias</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">Cursos</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="../html/recursos.html">Recursos</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="../html/contacto.html">Contacto</a>
+            </li>
+            <!-- <li class="nav-item">
+                      <a id="btnCambiarCarrera" class="nav-link" href="#"  onclick="changeCarrera()">Carrera</a>
+                  </li> -->
           </ul>
         </div>
-        <p class="mt-5 text-muted powered">
+        <p class="mt-3 mt-md-5 text-muted powered">
           Powered by
           <a class="text-decoration-none text-white" href="">Germán Walton</a> &
           <a
