@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&family=Roboto:wght@300&display=swap");
 body {
   font-family: "Roboto Condensed", sans-serif; }
 
@@ -399,23 +400,90 @@ footer {
     margin-left: 0px !important; }
   /*-----------END STICKYS--------------*/
   /*---------------RECURSOS-----------------------*/
-  #papel-recursos {
-    position: relative;
-    background-color: #86d7f578;
-    width: 10rem;
-    height: 5rem;
-    left: -6.5rem;
-    top: 1.5rem; }
-    #papel-recursos span {
-      position: relative;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 1.5rem;
-      color: #18191f;
-      left: 3rem;
-      top: 1rem; }
   /*---------------END RECURSOS-----------------------*/
   /*-----------END MAIN------------------*/
   /*////////////////////////////////////////////////////////////////////////////////*/
   /*--------------------------------END MEDIA QUERYS---------------------------------*/
   /*////////////////////////////////////////////////////////////////////////////////*/ }
+
+/*ACORDEONES*/
+#papel-recursos.naranja {
+  width: 13rem;
+  height: 4.8rem;
+  background-color: #ffbb6c;
+  opacity: 65%;
+  left: -1rem;
+  top: 3rem; }
+  #papel-recursos.naranja span {
+    left: 5rem;
+    top: 1.2rem; }
+
+.papel_materias {
+  position: relative;
+  left: 1100px;
+  top: -50px;
+  width: 194px;
+  height: 183px;
+  background-color: #FFBFFF;
+  box-shadow: 0px 5px 5px rgba(17, 17, 17, 0.16), 0px 8px 8px rgba(17, 17, 17, 0.1);
+  transform: rotate(-5.12deg); }
+  .papel_materias span {
+    font-family: 'Roboto Condensed',sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: relative;
+    top: 130px;
+    left: 10px; }
+
+.accordion-item h2 button {
+  font-size: 1.5rem; }
+
+.accordion-body {
+  font-family: "Roboto", sans-serif; }
+  .accordion-body p {
+    font-size: 0.88rem;
+    line-height: 1.8; }
+  .accordion-body ul strong {
+    font-size: 1.13rem;
+    font-family: "Roboto Condensed", sans-serif; }
+  .accordion-body ul li {
+    font-size: 0.88rem;
+    line-height: 1.8; }
+
+.accordion-button:hover {
+  text-decoration: underline 3px #ff91ff; }
+
+.accordion-button_cursos:hover {
+  text-decoration: underline 3px #ffbb6c; }
+
+.accordion-button::after {
+  background-image: none; }
+
+.accordion-button:hover::after {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABmJLR0QA/wD/AP+gvaeTAAAAlklEQVQokdWRMQrCUBBE334+4hFSWOhBJB7DO1h5kpAid/AYhhxECwuPIBIyKZIUJi4oKOI00+xjdmfhG1KhRLmOKpR4M8Gl78yBtPc34Rf0OzhCV87ktsBicGV6pGbcbGfXCEDNgUDqBFST/WpKYBP7/K2TXAFrGi7jZADz7lGmJYETDSvb2/nZzJ++yoe7UsqhnI+rBeukJo8lmn10AAAAAElFTkSuQmCC");
+  margin-left: 10px; }
+
+.accordion-button_cursos:hover::after {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAPUlEQVRIiWNgGFHg/+6c//935/wnRQ8TrRwzasGoBUPIAkYYg9QMRNBg1ymMDAx08AFJYLSoGLVg1IKRCgA1qxC4eo8cTAAAAABJRU5ErkJggg==");
+  margin-left: 10px; }
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABmJLR0QA/wD/AP+gvaeTAAAAR0lEQVQoke3NIQ6AMBBE0Veyvheo4aa9KQgugCcpBvwKguqXk/kzTP6jwOgjVC1tnY7SyxWgahZbWq5W7PEuPUH6Od2dfMQN2McMAOw7TK8AAAAASUVORK5CYII=");
+  margin-left: 10px; }
+
+.accordion-button_cursos:not(.collapsed)::after {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAALElEQVRIiWNgGAWjYBSMAoKAEZnzf3fOf6oY6joFbi4TNQwcBaNgFIwCCgEAVKIEBMCUnSMAAAAASUVORK5CYII=");
+  margin-left: 10px; }
+
+.accordion-button:not(.collapsed) {
+  text-decoration: underline 3px #ff91ff;
+  color: #18191f; }
+
+.accordion-button_cursos:not(.collapsed) {
+  text-decoration: underline 3px #ffbb6c; }
+
+.accordion-button:focus {
+  z-index: 0;
+  border-color: none;
+  outline: 0;
+  box-shadow: none; }
