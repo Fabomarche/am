@@ -98,9 +98,10 @@
                     <h2 class="text-white pb-2 pb-md-5 fw-bold fs-1">Testimonios</h2>
                     <img class="opacity-25 comillas" src="./assets/img/comillas.svg" alt="">
                 </div>
-                <div id="carouselExampleControls" class="carousel carousel-light slide" data-bs-ride="carousel">
-                    <!-- DESKTOP VERSION -->
-                    <div class="carousel-inner d-none d-md-block">
+                <!-- DESKTOP CAROUSEL VERSION -->
+                <div id="carouselExampleControls" class="carousel carousel-light slide d-none d-md-block" data-bs-ride="carousel">
+                    
+                    <div class="carousel-inner">
                         <!-- carousel-item 1 -->
                         <div class="carousel-item active" data-bs-interval="20000">
                             <div class="d-flex">
@@ -188,13 +189,23 @@
                             </div>
                         </div>
                     </div>
-                    <!-- END DESKTOP VERSION -->
-                                                <!-- ################################################ -->
-                    <!-- MOBILE VERSION -->
-                    <div class="carousel-inner d-block d-md-none">
+                   
+                    <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- END DESKTOP CAROUSEL VERSION -->
+                <!-- MOBILE CAROUSEL VERSION -->
+                <div id="carouselExampleControls2" class="carousel carousel-light slide d-block d-md-none" data-bs-ride="carousel">
+                    <div class="carousel-inner">
                         <!-- carousel-item 1 -->
                         <div class="carousel-item active" data-bs-interval="20000">
-                            <div class="d-flex">
+                            <div class="d-flex justify-content-center">
                                 <div id="quote" class="w-50 d-flex flex-column align-items-center">
                                     <div>
                                         <div class="rectangule d-flex align-items-center">
@@ -219,14 +230,14 @@
                         </div>
                         <!-- carousel-item 2 -->
                         <div class="carousel-item" data-bs-interval="10000">
-                            <div class="d-flex">
+                            <div class="d-flex justify-content-center">
                                 <div id="quote" class="w-50 d-flex flex-column align-items-center">
                                     <div>
                                         <div class="rectangule d-flex align-items-center">
                                             <div class="quoteText container">
-                                                <!-- Testimonio 3 -->
-                                                <h5 id="3-testimonio-title" class="py-2"></h5>
-                                                <p id="3-testimonio-p"></p>
+                                                <!-- Testimonio 2 -->
+                                                <h5 id="2-mb-testimonio-title" class="py-2"></h5>
+                                                <p id="2-mb-testimonio-p"></p>
                                             </div>
                                         </div>
                                         <div class="triangule"></div>
@@ -235,7 +246,7 @@
                                     <div class="student d-flex p-2">
                                         <img class="me-3"src="./assets/img/corazon.svg" alt="">
                                         <div class="text-start">
-                                            <h6 id="3-testimonio-alumno"class="mb-0 fw-bold"></h6>
+                                            <h6 id="2-mb-testimonio-alumno"class="mb-0 fw-bold"></h6>
                                         </div>
                                     </div>
                                     
@@ -244,14 +255,14 @@
                         </div>
                         <!-- carousel-item 3 -->
                         <div class="carousel-item" data-bs-interval="10000">
-                            <div class="d-flex">
+                            <div class="d-flex justify-content-center">
                                 <div id="quote" class="w-50 d-flex flex-column align-items-center">
                                     <div>
                                         <div class="rectangule d-flex align-items-center">
                                             <div class="quoteText container">
                                                 <!-- Testimonio 3 -->
-                                                <h5 id="3-testimonio-title" class="py-2"></h5>
-                                                <p id="3-testimonio-p"></p>
+                                                <h5 id="3-mb-testimonio-title" class="py-2"></h5>
+                                                <p id="3-mb-testimonio-p"></p>
                                             </div>
                                         </div>
                                         <div class="triangule"></div>
@@ -260,7 +271,7 @@
                                     <div class="student d-flex p-2">
                                         <img class="me-3"src="./assets/img/corazon.svg" alt="">
                                         <div class="text-start">
-                                            <h6 id="3-testimonio-alumno"class="mb-0 fw-bold"></h6>
+                                            <h6 id="3-mb-testimonio-alumno"class="mb-0 fw-bold"></h6>
                                         </div>
                                     </div>
                                     
@@ -269,14 +280,14 @@
                         </div>
                         <!-- carousel-item 4 -->
                         <div class="carousel-item" data-bs-interval="10000">
-                            <div class="d-flex">
+                            <div class="d-flex justify-content-center">
                                 <div id="quote" class="w-50 d-flex flex-column align-items-center">
                                     <div>
                                         <div class="rectangule d-flex align-items-center">
                                             <div class="quoteText container">
                                                 <!-- Testimonio 4 -->
-                                                <h5 id="4-testimonio-title"class="py-2"></h5>
-                                                <p id="4-testimonio-p"></p>
+                                                <h5 id="4-mb-testimonio-title"class="py-2"></h5>
+                                                <p id="4-mb-testimonio-p"></p>
                                             </div>
                                         </div>
                                         <div class="triangule"></div>
@@ -284,23 +295,23 @@
                                     <div class="student d-flex p-2">
                                         <img class="me-3"src="./assets/img/corazon.svg" alt="">
                                         <div class="text-start">
-                                            <h6 id="4-testimonio-alumno" class="mb-0 fw-bold"></h6>
+                                            <h6 id="4-mb-testimonio-alumno" class="mb-0 fw-bold"></h6>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- END MOBILE VERSION -->
-                    <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
+                <!-- END MOBILE CAROUSEL VERSION -->
             </div>
         </section>
     </main>

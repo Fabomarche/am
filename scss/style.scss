@@ -487,6 +487,30 @@ footer {
 
   /*-----------END STICKYS--------------*/
 
+  /*-------------TESTIMONIOS----------------*/
+
+  .rectangule {
+    width: 20rem;
+    height: 28rem;
+  }
+  .triangule {
+    left: 9em;
+    top: -0.5em;
+  }
+  .carousel-control-next-icon {
+    transform: scale(1);
+  }
+  .carousel-control-prev-icon {
+    transform: scale(1);
+  }
+  .carousel-control-next {
+    transform: translate(50%, 0%);
+  }
+  .carousel-control-prev {
+    transform: translate(-50%, 0%);
+  }
+  /*-------------END TESTIMONIOS----------------*/
+
   /*---------------RECURSOS-----------------------*/
   #papel-recursos {
     width: 10rem;

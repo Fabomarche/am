@@ -399,7 +399,28 @@ footer {
     margin-top: -100px;
     margin-left: 0px !important; }
   /*-----------END STICKYS--------------*/
+  /*-------------TESTIMONIOS----------------*/
+  .rectangule {
+    width: 20rem;
+    height: 28rem; }
+  .triangule {
+    left: 9em;
+    top: -0.5em; }
+  .carousel-control-next-icon {
+    transform: scale(1); }
+  .carousel-control-prev-icon {
+    transform: scale(1); }
+  .carousel-control-next {
+    transform: translate(50%, 0%); }
+  .carousel-control-prev {
+    transform: translate(-50%, 0%); }
+  /*-------------END TESTIMONIOS----------------*/
   /*---------------RECURSOS-----------------------*/
+  #papel-recursos {
+    width: 10rem;
+    height: 5rem;
+    left: -6.5rem;
+    top: 1.5rem; }
   /*---------------END RECURSOS-----------------------*/
   /*-----------END MAIN------------------*/
   /*////////////////////////////////////////////////////////////////////////////////*/
@@ -424,11 +445,11 @@ footer {
   top: -50px;
   width: 194px;
   height: 183px;
-  background-color: #FFBFFF;
+  background-color: #ffbfff;
   box-shadow: 0px 5px 5px rgba(17, 17, 17, 0.16), 0px 8px 8px rgba(17, 17, 17, 0.1);
   transform: rotate(-5.12deg); }
   .papel_materias span {
-    font-family: 'Roboto Condensed',sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
     position: relative;
