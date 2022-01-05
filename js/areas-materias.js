@@ -1,154 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../css/style.css" />
-    <title>AM Clases Universitarias</title>
-    <link rel="icon" type="image/png" href="../assets/img/Logo PNG.png" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow py-0">
-        <div class="container">
-          <a
-            class="navbar-brand py-0 w-25 pt-3 pt-md-0 w-md-100"
-            href="../index.html"
-          >
-            <img
-              src="../assets/img/Logo AM con LEYENDA.png"
-              alt="logo AM"
-              class="img-fluid"
-              width="180"
-              height="auto"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div
-              class="
-                container
-                px-0 px-md-1
-                d-flex
-                flex-column
-                w-100
-                align-items-end
-              "
-            >
-              <div class="navbar-nav d-flex flex-row">
-                <a
-                  class="nav-item nav-link"
-                  href="https://www.instagram.com/amclases"
-                  target="_blank"
-                >
-                  <div id="insta-header"></div>
-                </a>
-                <a
-                  class="nav-item nav-link"
-                  href="https://www.facebook.com/amclases"
-                  target="_blank"
-                >
-                  <div id="face-header"></div>
-                </a>
-                <a
-                  class="nav-item nav-link"
-                  href="mailto:amclasesrosario@gmail.com"
-                  target="_blank"
-                >
-                  <div id="mail-header"></div>
-                </a>
-              </div>
-              <hr class="w-100 my-1" />
-              <div
-                class="
-                  navbar-nav
-                  d-flex
-                  align-items-center
-                  justify-content-between
-                  w-100
-                  mt-2
-                "
-              >
-                <div class="d-flex justify-content-center w-100 ms-5">
-                  <span
-                    id="carrerraSpan"
-                    class="d-none d-md-block navbar-text fs-3 ms-5 ps-5"
-                    >Carrera</span
-                  >
-                </div>
-                <div
-                  class="
-                    d-flex
-                    align-items-center
-                    w-100
-                    justify-content-end
-                    fs-header
-                  "
-                >
-                  <a
-                    class="
-                      nosotros-link
-                      transition
-                      nav-link
-                      px-1
-                      d-block
-                      text-nowrap
-                    "
-                    href="../html/nosotros.html"
-                    >Sobre Nosotros</a
-                  >
-                  <span>|</span>
-                  <a class="materias-link transition nav-link px-1" href="#"
-                    >Materias</a
-                  >
-                  <span>|</span>
-                  <a class="cursos-link transition nav-link px-1" href="#"
-                    >Cursos</a
-                  >
-                  <span>|</span>
-                  <a
-                    class="recursos-link transition nav-link px-1"
-                    href="../html/recursos.html"
-                    >Recursos</a
-                  >
-                  <span>|</span>
-                  <a
-                    class="contacto-link transition nav-link px-1"
-                    href="../html/contacto.html"
-                    >Contacto</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-md-none container d-flex justify-content-center">
-          <span id="carrerraSpan2" class="navbar-text fs-3">Carrera</span>
-        </div>
-      </nav>
-    </header>
+const materias = document.getElementById('areas-materias')
 
-    <main>
-      <!--Materias Arquitectura-->
-      <section class="container d-flex justify-content-end fondoPapel position-relative">
-      <div class="papel_materias"><span>Materias</span></div>
+
+
+if(sessionStorage.getItem('carrerra') === 'Arquitectura'){
+  materias.innerHTML = ` 
+  <div class="papel_materias"><span>Materias</span></div>
 
         <div class="accordion col-9 col-md-10 col-lg-11 mt-5" id="accordionExample">
 
@@ -346,75 +202,217 @@
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <footer class="pt-2 pb-1">
-      <nav
-        class="
-          navbar navbar-expand-lg navbar-dark
-          d-flex
-          flex-column
-          align-items-center
-          text-white
-        "
+  `
+}else{
+  materias.innerHTML = ` 
+  <div class="papel_materias"><span>Áreas</span></div>
+
+  <div class="accordion col-9 col-md-10 col-lg-11 mt-5" id="accordionExample">
+    <div
+      class="accordion-item bg-transparent border-bottom-0 border-0 mt-5"
+    >
+      <h2 class="accordion-header" id="headingOne">
+        <button
+          class="accordion-button collapsed bg-transparent"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseOne"
+          aria-expanded="false"
+          aria-controls="collapseOne"
+        >
+          Crecimiento y desarrollo
+        </button>
+      </h2>
+      <div
+        id="collapseOne"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample"
       >
-        <div class="w-25 w-md-100 d-flex justify-content-center">
+        <div class="accordion-body">
+          <p>
+            En esta área veremos las diferentes materias que abarca
+            crecimiento y desarrollo, al mismo tiempo que aprenderás cómo
+            estudiar, cómo organizarte en tus inicios en la universidad y
+            cómo hacer tus propios resúmenes. En cada clase practicaremos
+            cómo presentar los temas desarrollados, para ayudarte a perder
+            el miedo a hablar en las mesas de examen o en las tutorías
+          </p>
+
           <img
-            src="../assets/img/Logo blanco PNG 1.png"
             class="img-fluid"
-            alt="logo AM white"
+            src="../assets/img/areas-Medicina/Medicina _Area_1_Crecimiento_y_Desarrollo.jpg"
+            alt="Crecimiento_y_Desarrollo"
           />
         </div>
-        <div>
-          <ul
-            class="navbar-nav d-flex flex-row flex-wrap justify-content-center"
-          >
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="../html/nosotros.html"
-                >Sobre Nosotros</a
-              >
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#">Materias</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#">Cursos</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="../html/recursos.html">Recursos</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="../html/contacto.html">Contacto</a>
-            </li>
-            <!-- <li class="nav-item">
-                      <a id="btnCambiarCarrera" class="nav-link" href="#"  onclick="changeCarrera()">Carrera</a>
-                  </li> -->
-          </ul>
+      </div>
+    </div>
+    <div class="accordion-item bg-transparent border-0 mt-1">
+      <h2 class="accordion-header" id="headingTwo">
+        <button
+          class="accordion-button collapsed bg-transparent title_area"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseTwo"
+          aria-expanded="false"
+          aria-controls="collapseTwo"
+        >
+          Nutrición
+        </button>
+      </h2>
+      <div
+        id="collapseTwo"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingTwo"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <p>
+            Nos enfocaremos en estudiar el aparato digestivo desde las
+            diferentes materias que comprenden el área de nutrición:
+            Anatomía, Histología, Embriología, Fisiología, etc. También
+            aprenderás las diferencias que tiene el aparato digestivo
+            entre el lactante, el adulto y el adulto mayor. Posteriormente
+            veremos los temas que necesitas entender y aprender, no solo
+            para el desarrollo y presentación de cada unidad en la mesa de
+            examen y tutorías, sino también para los próximos años de la
+            carrera
+          </p>
+
+          <img
+            class="img-fluid"
+            src="../assets/img/areas-Medicina/Medicina_Area_2_Nutrición.jpg"
+            alt="Nutrición"
+          />
         </div>
-        <p class="mt-3 mt-md-5 text-muted powered">
-          Powered by
-          <a class="text-decoration-none text-white" href="">Germán Walton</a> &
-          <a
-            class="text-decoration-none text-white"
-            href="https://www.linkedin.com/in/fabricio-marchetti"
-            >Fabricio Marchetti</a
-          >
-        </p>
-      </nav>
-    </footer>
-    <!------------------------------------------------------------------------------------------------------------------------------>
-    <!------------------------------------------------------SCRIPTS ----------------------------------------------------------->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-      crossorigin="anonymous"
-    ></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
-    <script src="../js/consistency_materia.js"></script>
-  </body>
-</html>
+      </div>
+    </div>
+    <div class="accordion-item bg-transparent border-0 mt-1">
+      <h2 class="accordion-header" id="headingThree">
+        <button
+          class="accordion-button collapsed bg-transparent title_area"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseThree"
+          aria-expanded="false"
+          aria-controls="collapseThree"
+        >
+          Sexualidad, género y reproducción
+        </button>
+      </h2>
+      <div
+        id="collapseThree"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingThree"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <p>
+            En esta área te enseñaremos como tema principal la
+            conformación y el funcionamiento del aparato reproductor del
+            varón y de la mujer desde las diferentes materias que
+            comprenden el área de sexualidad, género y reproducción, como
+            lo son: Anatomía, Histología, Embriología, Fisiología, etc. De
+            igual forma también veremos los diferentes temas que necesitan
+            tanto para el desarrollo de las unidades problema en la mesa
+            de examen y tutorías, como también para áreas y materias
+            futuras.
+          </p>
+
+          <img
+            class="img-fluid"
+            src="../assets/img/areas-Medicina/Medicina_Area_3_Sexualidad_genero_y_reproduccion.jpg"
+            alt="genero_y_reproduccion"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item bg-transparent border-0 mt-1">
+      <h2 class="accordion-header" id="headingFour">
+        <button
+          class="accordion-button collapsed bg-transparent title_area"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseFour"
+          aria-expanded="false"
+          aria-controls="collapseFour"
+        >
+          Trabajo y tiempo libre
+        </button>
+      </h2>
+      <div
+        id="collapseFour"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingFour"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <ul class="list-unstyled">
+            <span
+              >El desarrollo de esta área está dividido en 5
+              módulos:</span
+            >
+            <li class="mt-2">Módulo 1: Sistema nervioso</li>
+            <li class="mt-2">Módulo 2: Aparato cardiovascular</li>
+            <li class="mt-2">Módulo 3: Aparato respiratorio</li>
+            <li class="mt-2">Módulo 4: Sistema muscular</li>
+            <li class="mt-2">Módulo 5: Metabolismo</li>
+          </ul>
+          <p>
+            Veremos una integración de los sistemas anteriormente
+            mencionados en estado de reposo y los cambios que ellos tienen
+            durante el ejercicio. Además, en el desarrollo de cada unidad
+            problema iremos agregando los temas necesarios para
+            integrarlas de manera completa y, de esa manera, poder
+            resolverlas. Al igual que en los cursos anteriores, luego de
+            estudiar cada uno de los módulos, veremos cómo presentarlos
+            tanto para las mesas de examen como para las tutorías
+          </p>
+          <img
+          class="img-fluid"
+            src="../assets/img/areas-Medicina/Medicina_Area_4_Trabajo_y_tiempo_libre.jpg"
+            alt="Trabajo_y_tiempo_libre"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item bg-transparent border-0 mt-1 mb-5">
+      <h2 class="accordion-header" id="headingFive">
+        <button
+          class="accordion-button collapsed bg-transparent title_area"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseFive"
+          aria-expanded="false"
+          aria-controls="collapseFive"
+        >
+          El ser humano y su medio
+        </button>
+      </h2>
+      <div
+        id="collapseFive"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingFive"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <p>
+            En esta área estudiaremos nuestro medio interno, el aparato
+            urinario y la relación del ser humano con el entorno desde un
+            punto de vista biológico y social. Al finalizar veremos la
+            relación de cada uno de los temas con las unidades problema y
+            cómo presentarlo en los múltiples escenarios que se pueden dar
+            en las mesas de examen.
+          </p>
+          <img
+          class="img-fluid"
+            src="../assets/img/areas-Medicina/Medicina_Area_5_El ser humano_y_su_medio.jpg"
+            alt="El_ser_humano_y_su_medio"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  `
+}
+
