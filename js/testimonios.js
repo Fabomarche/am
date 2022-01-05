@@ -53,15 +53,24 @@ const consistency_testimonios = () => {
         La predisposición a la hora de enseñar se notaba en cada clase, junto a los apuntes hechos por ella y su facilidad para explicar cada uno de los temas. Destaco su organización ante tantos alumnos, porque siempre estuvo dispuesta. Las clases fueron una buena herramienta para poder promocionar la materia sin ningún problema y seguir avanzando en mi carrera.
         `
         alumno_3.innerText = mb_alumno_3.innerText = 'Emilia Striglio'
-
-        alumno_4.innerText = mb_alumno_4.innerText = 'Dandara Grima'
+        
+        title_4.innerText = mb_title_4.innerText = `"Sus apuntes, juro que valen oro"`
+        p_4.innerText = mb_p_4.innerText = `Comencé a tener clases con AM para lograr entender los ejercicios
+        que nos daban en la cátedra. 
+        La suma de las clases con Angi,
+        la forma de explicar con ejercicios súper simples para arrancar
+        (y después otros más complejos) y sus apuntes, juro que valen oro. 
+        ¡Terminé promoviendo con 8 la materia! Estoy súper contenta y conforme con todo.
+        `
+        alumno_4.innerText = mb_alumno_4.innerText = 'Stefania Leonetti'
     }else{
         title_1.innerText = mb_title_1.innerText = `"Te enseñan a estudiar de forma eficiente"`
         p_1.innerText = mb_p_1.innerText = `Antes de tener las clases con AM tuve otra particular. Lo dejé porque no explicaba absolutamente nada, era ir y que me dijeran las páginas que tenía que leer para la siguiente clase. En cambio, en AM no solo me explican todos los temas, sino que me motivan a leerlos por mi mismo y a hacer mis propios resúmenes. No solo se comprende los temas, también te enseñan a estudiar de forma eficiente. Gracias a mi esfuerzo y a estás clases aprobé mi primer año de Medicina.`
         alumno_1.innerText = mb_alumno_1.innerText  = 'Ezequiel Sosa'
         
         title_2.innerText = mb_title_2.innerText = `"Me ayudaron a saber expresarme en los exámenes finales"`
-        p_2.innerText = mb_p_2.innerText = `Gracias a las clases de AM, aprendí a estudiar los temas de las áreas desde el razonamiento y la comprensión, leyendo de los libros y haciendo mis resúmenes. Además, me ayudaron a saber expresarme en los exámenes finales, por la modalidad dinámica de las clases, donde nos impulsaban a la participación.`
+        p_2.innerText = mb_p_2.innerText = `Gracias a las clases de AM, aprendí a estudiar los temas de las áreas desde el razonamiento y la comprensión, leyendo de los libros y haciendo mis resúmenes.
+        Además, me ayudaron a saber expresarme en los exámenes finales, por la modalidad dinámica de las clases, donde nos impulsaban a la participación.`
         alumno_2.innerText = mb_alumno_2.innerText = 'Melina Ravanedo'
         
         title_3.innerText = mb_title_3.innerText = `"Miguel se preocupa de que todos sus alumnos se apropien del tema"`
@@ -71,7 +80,14 @@ const consistency_testimonios = () => {
         `
         alumno_3.innerText = mb_alumno_3.innerText = 'Nicolás Ullúa'
 
-        alumno_4.innerText = mb_alumno_4.innerText = 'Ezequiel Sosa'
+        title_4.innerText = mb_title_4.innerText = `"Clases dinámicas y entretenidas"`
+        p_4.innerText = mb_p_4.innerText = `Las clases de AM son un gran acompañamiento del estudio. 
+        Además de ayudarme a aprobar mis exámenes, 
+        pude comprender todos los temas durante clases dinámicas y entretenidas, 
+        en las cuales también, se busca que el alumno mejore sus métodos de estudio 
+        y la forma de desenvolverse en el examen.
+        `
+        alumno_4.innerText = mb_alumno_4.innerText = 'Nazarena Pisani'
     
     }
 }
