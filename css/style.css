@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&family=Roboto:wght@300&display=swap");
 body {
-  font-family: "Roboto Condensed", sans-serif; }
+  font-family: "Roboto Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
 
 .index-body {
   overflow: hidden; }
@@ -340,7 +343,8 @@ header {
 /*--------------------------------END MAIN---------------------------------*/
 footer {
   font-family: "Inter", sans-serif;
-  background-color: #18191f; }
+  background-color: #18191f;
+  margin-top: auto; }
   footer .powered {
     font-size: 0.8rem; }
 
@@ -357,7 +361,7 @@ footer {
     font-size: 1rem;
     position: absolute;
     left: 4rem;
-    top: .9rem; }
+    top: 0.9rem; }
 
 .papel_materias {
   position: absolute;
@@ -387,7 +391,7 @@ footer {
     font-size: 1rem;
     font-family: "Roboto Condensed", sans-serif; }
   .accordion-body ul span {
-    font-size: .75rem; }
+    font-size: 0.75rem; }
   .accordion-body ul li {
     font-size: 0.75rem;
     line-height: 1.8; }
@@ -524,7 +528,7 @@ footer {
     .accordion-body ul strong {
       font-size: 1.13rem; }
     .accordion-body ul span {
-      font-size: .88rem; }
+      font-size: 0.88rem; }
     .accordion-body ul li {
       font-size: 0.88rem; }
   #papel-recursos.naranja {
@@ -538,7 +542,7 @@ footer {
       top: 1.2rem; }
   .accordion {
     margin-top: 1rem !important;
-    padding: .5rem; }
+    padding: 0.5rem; }
   .papel_materias {
     left: 1170px;
     top: -50px;

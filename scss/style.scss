@@ -17,6 +17,9 @@ $negro: #18191f;
 
 body {
   font-family: "Roboto Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 .index-body {
   overflow: hidden;
@@ -406,16 +409,16 @@ header {
 footer {
   font-family: "Inter", sans-serif;
   background-color: $negro;
+  margin-top: auto;
   .powered {
     font-size: 0.8rem;
   }
 }
 
-
 /*ACORDEONES*/
 
 #papel-recursos.naranja {
-  position:absolute;
+  position: absolute;
   width: 10rem;
   height: 3rem;
   background-color: $naranja;
@@ -424,9 +427,9 @@ footer {
   top: 2.5rem;
   span {
     font-size: 1rem;
-    position:absolute;
+    position: absolute;
     left: 4rem;
-    top: .9rem;
+    top: 0.9rem;
   }
 }
 
@@ -440,14 +443,14 @@ footer {
   box-shadow: 0px 5px 5px rgba(17, 17, 17, 0.16),
     0px 8px 8px rgba(17, 17, 17, 0.1);
   transform: rotate(-5.12deg);
-   span {
-     font-family: "Roboto Condensed", sans-serif;
-     font-size: 1rem;
-     font-weight: 700;
+  span {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
     top: 73px;
-     left: 10px;
-     position: absolute;
-   }
+    left: 10px;
+    position: absolute;
+  }
 }
 
 .accordion-item h2 button {
@@ -465,7 +468,9 @@ footer {
       font-size: 1rem;
       font-family: "Roboto Condensed", sans-serif;
     }
-    span{font-size:.75rem}
+    span {
+      font-size: 0.75rem;
+    }
     li {
       font-size: 0.75rem;
       line-height: 1.8;
@@ -520,14 +525,6 @@ footer {
   outline: 0;
   box-shadow: none;
 }
-
-
-
-
-
-
-
-
 
 /*////////////////////////////////////////////////////////////////////////////////*/
 /*--------------------------------MEDIA QUERYS---------------------------------*/
@@ -642,73 +639,59 @@ footer {
   }
 
   /*---------------END RECURSOS-----------------------*/
+}
+/*-----------END MAIN------------------*/
 
-  
-    }
-  /*-----------END MAIN------------------*/
-
-  /*ACORDEONES*/
-  @media only screen and (min-width:1400px){
-    .accordion-item h2 button {
-      font-size: 1.5rem
-    }
-    .accordion-body {
-      margin-right: 75px;
+/*ACORDEONES*/
+@media only screen and (min-width: 1400px) {
+  .accordion-item h2 button {
+    font-size: 1.5rem;
+  }
+  .accordion-body {
+    margin-right: 75px;
     p {
+      font-size: 0.88rem;
+    }
+    ul {
+      strong {
+        font-size: 1.13rem;
+      }
+      span {
         font-size: 0.88rem;
       }
-      ul {
-        strong {
-          font-size: 1.13rem;
-        }
-        span{font-size:.88rem}
-        li {
-          font-size: 0.88rem;
-        }
+      li {
+        font-size: 0.88rem;
       }
     }
-    #papel-recursos.naranja {
-      
-      width: 11rem;
-      height: 4.2rem;
-      left: -5rem;
-      top: 4rem;
-      span {
-        font-size:1.5rem;
-        left: 5rem;
-        top: 1.2rem;
-      }
-    }
-    .accordion {
-      margin-top:1rem!important;
-      padding:.5rem;
-    }
-
-    .papel_materias {
-      
-      left:1170px;
-      top: -50px;
-      width: 194px;
-      height: 183px;
-       span {
-         font-size: 1.5rem;
-         top: 130px;
-         left: 10px;
-         
-       }
-    }
-
   }
-  /*////////////////////////////////////////////////////////////////////////////////*/
-  /*--------------------------------END MEDIA QUERYS---------------------------------*/
-  /*////////////////////////////////////////////////////////////////////////////////*/
+  #papel-recursos.naranja {
+    width: 11rem;
+    height: 4.2rem;
+    left: -5rem;
+    top: 4rem;
+    span {
+      font-size: 1.5rem;
+      left: 5rem;
+      top: 1.2rem;
+    }
+  }
+  .accordion {
+    margin-top: 1rem !important;
+    padding: 0.5rem;
+  }
 
-
-
-
-
-
-
- 
-
-
+  .papel_materias {
+    left: 1170px;
+    top: -50px;
+    width: 194px;
+    height: 183px;
+    span {
+      font-size: 1.5rem;
+      top: 130px;
+      left: 10px;
+    }
+  }
+}
+/*////////////////////////////////////////////////////////////////////////////////*/
+/*--------------------------------END MEDIA QUERYS---------------------------------*/
+/*////////////////////////////////////////////////////////////////////////////////*/
