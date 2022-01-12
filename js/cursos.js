@@ -59,7 +59,7 @@ if(sessionStorage.getItem('carrerra') === 'Arquitectura'){
                   Photoshop y algún programa de modelado 3d.
                 </p>
                 <img
-                  class="img-fluid"
+                  class="w-100"
                   src="../assets/img/cursos-Arquitectura/Arquitectura_Curso1_ Creación_de_esquemas_arquitectónicos.jpg"
                   alt="Creación de esquemas arquitectónicos"
                 />
@@ -114,7 +114,7 @@ if(sessionStorage.getItem('carrerra') === 'Arquitectura'){
                   de líneas como pueden ser Adobe Illustrator o AutoCAD.
                 </p>
                 <img
-                  class="img-fluid"
+                  class="w-100"
                   src="../assets/img/cursos-Arquitectura/Arquitectura _Curso_2 _Collage_Arquitectónico.jpg"
                   alt="Collage Arquitectónico"
                 />
@@ -168,7 +168,7 @@ if(sessionStorage.getItem('carrerra') === 'Arquitectura'){
                   necesitarás un ordenador con Adobe Photoshop.
                 </p>
                 <img
-                  class="img-fluid"
+                  class="w-100"
                   src="../assets/img/cursos-Arquitectura/Arquitectura_Curso_3_Photoshop.jpg"
                   alt="Photoshop"
                 />
@@ -225,7 +225,7 @@ if(sessionStorage.getItem('carrerra') === 'Arquitectura'){
                     Este curso está orientado a estudiantes de medicina de primer y segundo año. No requiere tener conocimientos previos.
                     </p>
                 <img
-                class="img-fluid"
+                class="w-100"
                   src="../assets/img/cursos-Medicina/Medicina_Curso1_Neuroanatomía.jpg"
                   alt="Curso1-Neuroanatomía"
                 />
@@ -258,7 +258,7 @@ if(sessionStorage.getItem('carrerra') === 'Arquitectura'){
 
                 </p>
                 <img
-                   class="img-fluid"
+                   class="w-100"
                    src="../assets/img/cursos-Medicina/Medicina_Curso2_Anatomía_de_miembro_superior_e _inferior.jpg"
                   alt="Anatomía de miembro superior e inferior"
                 />
@@ -296,7 +296,7 @@ if(sessionStorage.getItem('carrerra') === 'Arquitectura'){
                   </ul>
                   <p>Este curso está orientado a estudiantes de medicina de primer y segundo año. No requiere tener conocimientos previos.</p>
                 <img
-                class="img-fluid"
+                class="w-100"
                    src="../assets/img/cursos-Medicina/Medicina_Curso3_Embriología.jpg"
                   alt="Embriología"
                 />

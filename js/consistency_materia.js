@@ -4,6 +4,7 @@ const materias_areas = document.getElementById('materias_areas')
 const btnCambiarCarrera = document.getElementById('btnCambiarCarrera')//footer
 const materias_areas_footer = document.getElementById('materias_areas_footer')
 
+
 if(sessionStorage.getItem('carrerra')){
     if(sessionStorage.getItem('carrerra') === 'Medicina'){
         materias_areas.innerText = materias_areas_footer.innerText = "Áreas"

@@ -20,7 +20,11 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-image: url("../assets/img/hoja_papel_612x612.png");
+
 }
+
+
 .index-body {
   overflow: hidden;
 }
@@ -100,11 +104,7 @@ header {
 /*---------------END HEADER------------------*/
 /*--------------------------------MAIN---------------------------------*/
 
-.fondoPapel {
-  background-image: url("../assets/img/hoja_papel_612x612.png");
-  width: 100%;
-  height: auto;
-}
+
 
 .whatsapp {
   position: fixed;
@@ -409,7 +409,7 @@ header {
 footer {
   font-family: "Inter", sans-serif;
   background-color: $negro;
-  margin-top: auto;
+   margin-top: auto;
   .powered {
     font-size: 0.8rem;
   }
@@ -641,6 +641,17 @@ footer {
   /*---------------END RECURSOS-----------------------*/
 }
 /*-----------END MAIN------------------*/
+
+@media only screen and (min-width: 1400px){
+  body{
+  background-repeat:repeat-y;  
+  background-position: center;
+  background-size: 70%;
+width: 100%;}
+}
+
+
+
 
 /*ACORDEONES*/
 @media only screen and (min-width: 1400px) {
