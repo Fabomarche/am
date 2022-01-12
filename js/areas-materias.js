@@ -56,7 +56,7 @@ if(sessionStorage.getItem('carrerra') === 'Arquitectura'){
                   <li class="mt-2">Unidad 6: Sombras</li>
                 </ul>
                 <img
-                  class="img-fluid"
+                  class="w-100"
                   src="../assets/img/materias-Arquitectura/Arquitectura_Geometría_Descriptiva.jpg"
                   alt="Geometría_Descriptiva"
                 />
@@ -110,7 +110,7 @@ if(sessionStorage.getItem('carrerra') === 'Arquitectura'){
                   </li>
                 </ul>
                 <img
-                  class="img-fluid"
+                  class="w-100"
                   src="../assets/img/materias-Arquitectura/Arquitectura_Materia 2_Física.jpg"
                   alt="Física"
                 />
@@ -156,7 +156,7 @@ if(sessionStorage.getItem('carrerra') === 'Arquitectura'){
                   <li class="mt-2">Unidad 4: Rectas.</li>
                 </ul>
                 <img
-                  class="img-fluid"
+                  class="w-100"
                   src="../assets/img/materias-Arquitectura/Arquitectura_Materia3_Matemáticas1.jpg"
                   alt="Matemáticas1"
                 />
@@ -194,7 +194,7 @@ if(sessionStorage.getItem('carrerra') === 'Arquitectura'){
                   haciendo en conjunto.
                 </p>
                 <img
-                  class="img-fluid"
+                  class="w-100"
                   src="../assets/img/materias-Arquitectura/Arquitectura_Materia 4_ Estática_y_Resistencia.jpg"
                   alt="Estática_y_Resistencia"
                 />
@@ -240,7 +240,7 @@ if(sessionStorage.getItem('carrerra') === 'Arquitectura'){
           </p>
 
           <img
-            class="img-fluid"
+            class="w-100"
             src="../assets/img/areas-Medicina/Medicina _Area_1_Crecimiento_y_Desarrollo.jpg"
             alt="Crecimiento_y_Desarrollo"
           />
@@ -280,7 +280,7 @@ if(sessionStorage.getItem('carrerra') === 'Arquitectura'){
           </p>
 
           <img
-            class="img-fluid"
+            class="w-100"
             src="../assets/img/areas-Medicina/Medicina_Area_2_Nutrición.jpg"
             alt="Nutrición"
           />
@@ -320,7 +320,7 @@ if(sessionStorage.getItem('carrerra') === 'Arquitectura'){
           </p>
 
           <img
-            class="img-fluid"
+            class="w-100"
             src="../assets/img/areas-Medicina/Medicina_Area_3_Sexualidad_genero_y_reproduccion.jpg"
             alt="genero_y_reproduccion"
           />
@@ -369,7 +369,7 @@ if(sessionStorage.getItem('carrerra') === 'Arquitectura'){
             tanto para las mesas de examen como para las tutorías
           </p>
           <img
-          class="img-fluid"
+          class="w-100"
             src="../assets/img/areas-Medicina/Medicina_Area_4_Trabajo_y_tiempo_libre.jpg"
             alt="Trabajo_y_tiempo_libre"
           />
@@ -405,7 +405,7 @@ if(sessionStorage.getItem('carrerra') === 'Arquitectura'){
             en las mesas de examen.
           </p>
           <img
-          class="img-fluid"
+          class="w-100"
             src="../assets/img/areas-Medicina/Medicina_Area_5_El ser humano_y_su_medio.jpg"
             alt="El_ser_humano_y_su_medio"
           />

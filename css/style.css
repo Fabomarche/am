@@ -4,7 +4,8 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-image: url("../assets/img/hoja_papel_612x612.png"); }
 
 .index-body {
   overflow: hidden; }
@@ -75,11 +76,6 @@ header {
 
 /*---------------END HEADER------------------*/
 /*--------------------------------MAIN---------------------------------*/
-.fondoPapel {
-  background-image: url("../assets/img/hoja_papel_612x612.png");
-  width: 100%;
-  height: auto; }
-
 .whatsapp {
   position: fixed;
   left: 85%;
@@ -517,6 +513,13 @@ footer {
   /*---------------END RECURSOS-----------------------*/ }
 
 /*-----------END MAIN------------------*/
+@media only screen and (min-width: 1400px) {
+  body {
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 70%;
+    width: 100%; } }
+
 /*ACORDEONES*/
 @media only screen and (min-width: 1400px) {
   .accordion-item h2 button {
