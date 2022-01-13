@@ -1,7 +1,7 @@
 const cursos = document.getElementById('cursos');
 
 
-if(sessionStorage.getItem('carrerra') === 'Arquitectura'){
+if(sessionStorage.getItem('carrera') === 'Arquitectura'){
   cursos.innerHTML = ` 
   <div id="papel-recursos" class="naranja"><span>Cursos</span></div>
 

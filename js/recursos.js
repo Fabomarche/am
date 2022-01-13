@@ -1,6 +1,6 @@
 const recursos = document.getElementById('render-recursos')
 
-if(sessionStorage.getItem('carrerra') === 'Arquitectura'){
+if(sessionStorage.getItem('carrera') === 'Arquitectura'){
     recursos.innerHTML = ` 
     <a href="https://drive.google.com/drive/folders/1r6jlW4lYyIhrnIM9Ly-sbRQkLqUP4BuO?usp=sharing" target="_blank">
         <img src="../assets/img/Libros.png" alt="">

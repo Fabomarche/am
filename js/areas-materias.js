@@ -2,7 +2,7 @@ const materias = document.getElementById('areas-materias')
 
 
 
-if(sessionStorage.getItem('carrerra') === 'Arquitectura'){
+if(sessionStorage.getItem('carrera') === 'Arquitectura'){
   materias.innerHTML = ` 
   <div class="papel_materias"><span>Materias</span></div>
 
