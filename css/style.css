@@ -1,4 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&family=Roboto:wght@300&display=swap");
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("../assets/img/hoja_papel_612x612.png"); }
+
+.index-body {
+  overflow: hidden; }
+
 /*---------------HEADER------------------*/
+.navbar {
+  z-index: 1; }
+
 header {
   margin-top: -1.25rem; }
 
@@ -13,23 +28,61 @@ header {
   transition: 0.5s; }
 
 .materias-link:hover {
-  color: #ff91ff !important; }
+  color: #ff91ff !important;
+  font-weight: bold; }
 
 .cursos-link:hover {
-  color: #ffbb6c !important; }
+  color: #ffbb6c !important;
+  font-weight: bold; }
 
 .recursos-link:hover {
-  color: #86d7f5 !important; }
+  color: #86d7f5 !important;
+  font-weight: bold; }
 
 .contacto-link:hover {
-  color: #a8f69c !important; }
+  color: #a8f69c !important;
+  font-weight: bold; }
+
+.nosotros-link:hover {
+  color: #fbf47d !important;
+  font-weight: bold; }
+
+#insta-header {
+  width: 32px;
+  height: 32px;
+  transition: 0.5s;
+  background-image: url("../assets/img/insta_a.svg"); }
+
+#insta-header:hover {
+  background-image: url("../assets/img/instagram.svg"); }
+
+#face-header {
+  width: 32px;
+  height: 32px;
+  transition: 0.5s;
+  background-image: url("../assets/img/facebook_a.svg"); }
+
+#face-header:hover {
+  background-image: url("../assets/img/facebook.svg"); }
+
+#mail-header {
+  width: 32px;
+  height: 32px;
+  transition: 0.5s;
+  background-image: url("../assets/img/mail_a.svg"); }
+
+#mail-header:hover {
+  background-image: url("../assets/img/mail.svg"); }
 
 /*---------------END HEADER------------------*/
 /*--------------------------------MAIN---------------------------------*/
-.fondoPapel {
-  background-image: url("../assets/img/hoja_papel_612x612.png");
-  width: 100%;
-  height: auto; }
+.whatsapp {
+  position: fixed;
+  left: 85%;
+  right: 5.93%;
+  top: 84.87%;
+  bottom: 5.92%;
+  z-index: 5; }
 
 /*----------MODAL----------------*/
 .modal {
@@ -43,59 +96,57 @@ header {
   height: 2.8rem;
   transform: rotate(33deg);
   top: 3em;
-  left: 24em;
+  left: 34em;
   z-index: 2;
   opacity: 0.75; }
 
 #botones-papel {
+  font-family: "Inter", sans-serif;
   position: relative;
   top: 1em; }
+  #botones-papel a {
+    cursor: pointer; }
 
 #btn-papel-iz {
-  background-color: #86d7f5;
-  width: 10rem;
-  height: 6rem;
-  transform: rotate(-5deg);
+  background-color: #cfeef8;
+  width: 12rem;
+  height: 6.5rem;
   box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.2);
   transition: 0.5s; }
   #btn-papel-iz span {
+    font-size: 1.4rem;
     font-weight: bold;
     position: relative;
-    top: 2em;
-    left: 2em; }
+    top: 1.5em;
+    left: 1em; }
 
 #btn-papel-de {
-  background-color: #86d7f5;
-  width: 10rem;
-  height: 6rem;
-  transform: rotate(5deg);
+  background-color: #cfeef8;
+  width: 12rem;
+  height: 6.5rem;
   box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.2);
   transition: 0.5s; }
   #btn-papel-de span {
+    font-size: 1.4rem;
     font-weight: bold;
     position: relative;
-    top: 2em;
-    left: 2.6em; }
+    top: 1.5em;
+    left: 2em; }
 
 #btn-papel-iz:hover,
 #btn-papel-de:hover {
-  transform: scale(1.1); }
+  transform: scale(1.1);
+  font-weight: bold; }
 
 .modal-content {
-  background-image: url("../assets/img/hoja_papel_612x612.png"); }
+  background-image: url("../assets/img/hoja_papel_612x612.png");
+  background-size: cover; }
 
 /*----------END MODAL----------------*/
 /*-----------STICKYS--------------*/
 #stickys {
-  margin-top: -100px;
+  margin-top: -75px;
   margin-left: 150px !important; }
-
-#hashtag {
-  position: relative;
-  top: 185px;
-  right: 125px;
-  font-weight: bold;
-  font-size: 0.9rem; }
 
 #stickyYellow {
   position: relative;
@@ -103,7 +154,7 @@ header {
   top: 8em;
   width: 14rem;
   height: 14rem;
-  background-color: #fbf47d;
+  background-color: #fffbb0;
   transform: rotate(10deg);
   z-index: 2;
   box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.2);
@@ -128,7 +179,7 @@ header {
   top: 2em;
   width: 11rem;
   height: 11rem;
-  background-color: #ffbb6c;
+  background-color: #ffe3c1;
   transform: rotate(-25deg);
   z-index: 0;
   box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -165,6 +216,8 @@ header {
 /*-------------TESTIMONIOS----------------*/
 .testimonios {
   background-color: #ffcfe6; }
+  .testimonios h2 {
+    font-family: "Inter", sans-serif; }
   .testimonios .comillas {
     width: 14%;
     height: auto; }
@@ -175,13 +228,16 @@ header {
   z-index: 5; }
 
 .student {
-  color: white;
-  text-align: center; }
+  font-family: "Inter", sans-serif;
+  background-color: #fffbb0;
+  color: #474a57;
+  text-align: center;
+  font-size: 0.8rem; }
 
 .rectangule {
   background-color: white;
   width: 30rem;
-  height: 10rem;
+  height: 19rem;
   border-radius: 12px;
   box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
   z-index: 1; }
@@ -213,33 +269,17 @@ header {
 
 /*-------------END TESTIMONIOS----------------*/
 /*-------------CONTACTO------------------------*/
-#contactoRosa {
-  background-color: #ff91ff;
-  margin: 1rem;
-  width: 15rem;
-  height: 17rem;
-  box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.2); }
+.rect-rosa {
+  background-color: #ffcfe6; }
 
-#contactoAmarillo {
-  background-color: #fbf47d;
-  margin: 1rem;
-  width: 15rem;
-  height: 17rem;
-  box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.2); }
+.rect-verde {
+  background-color: #d6f8cf; }
 
-#contactoCeleste {
-  background-color: #86d7f5;
-  margin: 1rem;
-  width: 15rem;
-  height: 17rem;
-  box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.2); }
+.rect-celeste {
+  background-color: #cfeef8; }
 
-#contactoVerde {
-  background-color: #a8f69c;
-  margin: 1rem;
-  width: 15rem;
-  height: 17rem;
-  box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.2); }
+.rect-naranja {
+  background-color: #ffe3c1; }
 
 /*---------------FORM-------------*/
 .btn-rosa {
@@ -249,8 +289,281 @@ header {
 
 /*---------------END FORM-------------*/
 /*-------------END CONTACTO------------------------*/
+/*-------------SOBRE NOSOTROS----------------------*/
+.nosotros p {
+  font-family: "Roboto", sans-serif; }
+
+.nosotros h3 {
+  text-decoration: underline;
+  text-decoration-color: #fbf47d;
+  text-decoration-thickness: 5px; }
+
+.resaltado-celeste {
+  background-color: #cfeef8;
+  width: fit-content; }
+
+.resaltado-verde {
+  background-color: #d6f8cf;
+  width: fit-content; }
+
+.resaltado-rosa {
+  background-color: #ffcfe6;
+  width: fit-content; }
+
+/*-------------END SOBRE NOSOTROS----------------------*/
+/*---------------RECURSOS-----------------------*/
+#render-recursos a {
+  text-decoration: none;
+  color: #18191f; }
+
+#render-recursos a:hover h5 {
+  font-weight: bold; }
+
+#papel-recursos {
+  position: relative;
+  background-color: #86d7f578;
+  width: 16rem;
+  height: 5rem;
+  left: -7rem;
+  top: -5rem; }
+  #papel-recursos span {
+    position: relative;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #18191f;
+    left: 3rem;
+    top: 1rem; }
+
+/*---------------END RECURSOS-----------------------*/
 /*--------------------------------END MAIN---------------------------------*/
 footer {
-  background-color: #18191f; }
+  font-family: "Inter", sans-serif;
+  background-color: #18191f;
+  margin-top: auto; }
   footer .powered {
     font-size: 0.8rem; }
+
+/*ACORDEONES*/
+#papel-recursos.naranja {
+  position: absolute;
+  width: 10rem;
+  height: 3rem;
+  background-color: #ffbb6c;
+  opacity: 65%;
+  left: 2rem;
+  top: 2.5rem; }
+  #papel-recursos.naranja span {
+    font-size: 1rem;
+    position: absolute;
+    left: 4rem;
+    top: 0.9rem; }
+
+.papel_materias {
+  position: absolute;
+  top: -35px;
+  width: 90px;
+  height: 100px;
+  background-color: #ffbfff;
+  box-shadow: 0px 5px 5px rgba(17, 17, 17, 0.16), 0px 8px 8px rgba(17, 17, 17, 0.1);
+  transform: rotate(-5.12deg); }
+  .papel_materias span {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    top: 73px;
+    left: 10px;
+    position: absolute; }
+
+.accordion-item h2 button {
+  font-size: 1.2rem; }
+
+.accordion-body {
+  font-family: "Roboto", sans-serif; }
+  .accordion-body p {
+    font-size: 0.75rem;
+    line-height: 1.8; }
+  .accordion-body ul strong {
+    font-size: 1rem;
+    font-family: "Roboto Condensed", sans-serif; }
+  .accordion-body ul span {
+    font-size: 0.75rem; }
+  .accordion-body ul li {
+    font-size: 0.75rem;
+    line-height: 1.8; }
+
+.accordion-button:hover {
+  text-decoration: underline 3px #ff91ff; }
+
+.accordion-button_cursos:hover {
+  text-decoration: underline 3px #ffbb6c; }
+
+.accordion-button::after {
+  background-image: none; }
+
+.accordion-button:hover::after {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABmJLR0QA/wD/AP+gvaeTAAAAlklEQVQokdWRMQrCUBBE334+4hFSWOhBJB7DO1h5kpAid/AYhhxECwuPIBIyKZIUJi4oKOI00+xjdmfhG1KhRLmOKpR4M8Gl78yBtPc34Rf0OzhCV87ktsBicGV6pGbcbGfXCEDNgUDqBFST/WpKYBP7/K2TXAFrGi7jZADz7lGmJYETDSvb2/nZzJ++yoe7UsqhnI+rBeukJo8lmn10AAAAAElFTkSuQmCC");
+  margin-left: 10px; }
+
+.accordion-button_cursos:hover::after {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAPUlEQVRIiWNgGFHg/+6c//935/wnRQ8TrRwzasGoBUPIAkYYg9QMRNBg1ymMDAx08AFJYLSoGLVg1IKRCgA1qxC4eo8cTAAAAABJRU5ErkJggg==");
+  margin-left: 10px; }
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABmJLR0QA/wD/AP+gvaeTAAAAR0lEQVQoke3NIQ6AMBBE0Veyvheo4aa9KQgugCcpBvwKguqXk/kzTP6jwOgjVC1tnY7SyxWgahZbWq5W7PEuPUH6Od2dfMQN2McMAOw7TK8AAAAASUVORK5CYII=");
+  margin-left: 10px; }
+
+.accordion-button_cursos:not(.collapsed)::after {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAALElEQVRIiWNgGAWjYBSMAoKAEZnzf3fOf6oY6joFbi4TNQwcBaNgFIwCCgEAVKIEBMCUnSMAAAAASUVORK5CYII=");
+  margin-left: 10px; }
+
+.accordion-button:not(.collapsed) {
+  text-decoration: underline 3px #ff91ff;
+  color: #18191f; }
+
+.accordion-button_cursos:not(.collapsed) {
+  text-decoration: underline 3px #ffbb6c; }
+
+.accordion-button:focus {
+  z-index: 0;
+  border-color: none;
+  outline: 0;
+  box-shadow: none; }
+
+/*////////////////////////////////////////////////////////////////////////////////*/
+/*--------------------------------MEDIA QUERYS---------------------------------*/
+/*////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 360px) and (max-width: 992px) {
+  /*----------------HEADER------------------*/
+  .fs-header {
+    font-size: 0.9rem; }
+  /*--------------END HEADER------------------*/
+  /*-----------MAIN------------------*/
+  .whatsapp {
+    left: 75%; }
+  /*----------MODAL----------------*/
+  #papel-amarillo {
+    position: relative;
+    background-color: #fbf47d;
+    width: 10rem;
+    height: 2.8rem;
+    transform: rotate(33deg);
+    top: 3em;
+    left: 15em;
+    z-index: 2;
+    opacity: 0.75; }
+  #botones-papel {
+    font-family: "Inter", sans-serif;
+    position: relative;
+    top: 0.5em; }
+    #botones-papel a {
+      cursor: pointer; }
+  #btn-papel-iz {
+    background-color: #cfeef8;
+    width: 10rem;
+    height: 4rem;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.2);
+    transition: 0.5s; }
+    #btn-papel-iz span {
+      font-size: 1.25rem;
+      font-weight: bold;
+      position: relative;
+      top: 0.75em;
+      left: 1em; }
+  #btn-papel-de {
+    background-color: #cfeef8;
+    width: 10rem;
+    height: 4rem;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.2);
+    transition: 0.5s; }
+    #btn-papel-de span {
+      font-size: 1.25rem;
+      font-weight: bold;
+      position: relative;
+      top: 0.75em;
+      left: 1.8em; }
+  /*----------END MODAL----------------*/
+  /*-----------STICKYS--------------*/
+  #stickys {
+    margin-top: -100px;
+    margin-left: 0px !important; }
+  /*-----------END STICKYS--------------*/
+  /*-------------TESTIMONIOS----------------*/
+  .rectangule {
+    width: 20rem;
+    height: 28rem; }
+  .triangule {
+    left: 9em;
+    top: -0.5em; }
+  .carousel-control-next-icon {
+    transform: scale(1); }
+  .carousel-control-prev-icon {
+    transform: scale(1); }
+  .carousel-control-next {
+    transform: translate(50%, 0%); }
+  .carousel-control-prev {
+    transform: translate(-50%, 0%); }
+  /*-------------END TESTIMONIOS----------------*/
+  /*---------------RECURSOS-----------------------*/
+  #papel-recursos {
+    width: 10rem;
+    height: 5rem;
+    left: -6.5rem;
+    top: 1.5rem; }
+  /*---------------END RECURSOS-----------------------*/ }
+
+/*-----------END MAIN------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #stickys {
+    width: 85%; }
+  .carousel-control-prev {
+    display: none !important; }
+  .carousel-control-next {
+    display: none !important; } }
+
+@media only screen and (min-width: 1400px) {
+  body {
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 70%;
+    width: 100%; } }
+
+/*ACORDEONES*/
+@media only screen and (min-width: 1400px) {
+  .accordion-item h2 button {
+    font-size: 1.5rem; }
+  .accordion-body {
+    margin-right: 75px; }
+    .accordion-body p {
+      font-size: 0.88rem; }
+    .accordion-body ul strong {
+      font-size: 1.13rem; }
+    .accordion-body ul span {
+      font-size: 0.88rem; }
+    .accordion-body ul li {
+      font-size: 0.88rem; }
+  #papel-recursos.naranja {
+    width: 11rem;
+    height: 4.2rem;
+    left: -5rem;
+    top: 4rem; }
+    #papel-recursos.naranja span {
+      font-size: 1.5rem;
+      left: 5rem;
+      top: 1.2rem; }
+  .accordion {
+    margin-top: 1rem !important;
+    padding: 0.5rem; }
+  .papel_materias {
+    left: 1170px;
+    top: -50px;
+    width: 194px;
+    height: 183px; }
+    .papel_materias span {
+      font-size: 1.5rem;
+      top: 130px;
+      left: 10px; } }
+
+/*////////////////////////////////////////////////////////////////////////////////*/
+/*--------------------------------END MEDIA QUERYS---------------------------------*/
+/*////////////////////////////////////////////////////////////////////////////////*/
