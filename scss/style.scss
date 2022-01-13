@@ -124,7 +124,7 @@ header {
   height: 2.8rem;
   transform: rotate(33deg);
   top: 3em;
-  left: 34em;
+  left: 15em;
   z-index: 2;
   opacity: 0.75;
 }
@@ -541,17 +541,7 @@ footer {
 
   /*----------MODAL----------------*/
 
-  #papel-amarillo {
-    position: relative;
-    background-color: $amarillo;
-    width: 10rem;
-    height: 2.8rem;
-    transform: rotate(33deg);
-    top: 3em;
-    left: 15em;
-    z-index: 2;
-    opacity: 0.75;
-  }
+  
 
   #botones-papel {
     font-family: "Inter", sans-serif;
@@ -647,6 +637,26 @@ footer {
   }
   .carousel-control-next {
     display: none !important;
+  }
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+  #papel-amarillo {
+    left: 17em;
+    
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  #papel-amarillo {
+    left: 24em;
+    
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #papel-amarillo {
+    left: 42em;
+    
   }
 }
 
