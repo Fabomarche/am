@@ -513,6 +513,14 @@ footer {
   /*---------------END RECURSOS-----------------------*/ }
 
 /*-----------END MAIN------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #stickys {
+    width: 85%; }
+  .carousel-control-prev {
+    display: none !important; }
+  .carousel-control-next {
+    display: none !important; } }
+
 @media only screen and (min-width: 1400px) {
   body {
     background-repeat: repeat-y;

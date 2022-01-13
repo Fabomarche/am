@@ -25,7 +25,7 @@ const mb_alumno_4 = document.getElementById('4-mb-testimonio-alumno')
 
 
 const consistency_testimonios = () => {
-    if(sessionStorage.getItem('carrerra') === 'Arquitectura'){
+    if(sessionStorage.getItem('carrera') === 'Arquitectura'){
         title_1.innerText = mb_title_1.innerText = `"Lo que me parecía imposible, se tornó más que posible"`
         p_1.innerText = mb_p_1.innerText = `Geometría descriptiva para mi (y para muchos de mis compañeros) fue una materia muy compleja. Con esa materia pensaba que era imposible alcanzar el título de arquitecta. La cursé y dejé dos veces. En mi tercer y último intento conocí el curso de AM. Angi empezó a explicarme todo desde cero y lo que me parecía imposible, se tornó más que posible. 
         Con mucha dedicación, esfuerzo y la ayuda que obtuve, saqué un 9 en el segundo parcial posibilitandome promocionar la materia con 8,50.
